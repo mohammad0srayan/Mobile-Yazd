@@ -1458,7 +1458,7 @@ body {
 }
 
 .contact-up-image {
-    background: url(../assets/IMG_9887-B-2ZGDpQ.png) 50% no-repeat
+    background: url("../assets/IMG_9887-B-2ZGDpQ.png") no-repeat center;
 }
 
 .menu-footer li {
