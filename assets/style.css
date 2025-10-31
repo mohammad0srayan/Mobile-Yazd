@@ -1,5 +1,16 @@
 @import "tailwindcss";
 
+@font-face {
+    font-family: 'IRANYekanX';
+    src: url('assets/IranYekanX/IRANYekanX-Light.ttf');
+}
+
+* {
+    font-style: normal;
+    font-family: 'IRANYekanX', sans-serif;
+}
+
+
 @theme {
     --color-brand: #EC5201;
     --color-bgBrand: #FEF6E6;
@@ -135,7 +146,7 @@ body {
 }
 
 .box-shadow--items {
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 
 .box-shadow--items--box {
@@ -270,7 +281,17 @@ body {
         grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     }
     @media screen and (max-width: 390px) {
-        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    }
+}
+
+.grid-custom-box-items {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 1.5rem;
+    @media screen and (max-width: 390px) {
+        grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
     }
 }
 
@@ -302,4 +323,15 @@ body {
 
 #sidebar-main.active #sidebar {
     transform: translateX(0);
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+    --swiper-navigation-size: 1rem;
+    color: #EC5201;
+}
+
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+    color: #ffaa33;
 }

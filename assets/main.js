@@ -34,12 +34,20 @@ var swiper1 = new Swiper(".mySwiper", {
         delay: 2000, // هر ۳ ثانیه
         disableOnInteraction: false, // با لمس کاربر قطع نشه
     },
+
+    breakpoints: {
+        300: {
+            slidesPerView: 1,
+            spaceBetween: 10,
+        },
+    }
 });
 
 var swiper2 = new Swiper(".mySwiper3", {
     slidesPerView: 4,
     spaceBetween: 20,
     loop: true,
+    freeMode: true,
     autoplay: {
         delay: 2000, // هر ۳ ثانیه
         disableOnInteraction: false, // با لمس کاربر قطع نشه
@@ -77,6 +85,7 @@ var swiper2 = new Swiper(".mySwiper3", {
 var swiper3 = new Swiper(".mySwiper4", {
     slidesPerView: 5,
     spaceBetween: 20,
+    freeMode: true,
     loop: true,
     autoplay: {
         delay: 2000, // هر ۳ ثانیه
@@ -106,7 +115,7 @@ var swiper3 = new Swiper(".mySwiper4", {
             spaceBetween: 15,
         },
         300: {
-            slidesPerView: 1,
+            slidesPerView: 1.2,
             spaceBetween: 15,
         },
     },
@@ -115,6 +124,7 @@ var swiper3 = new Swiper(".mySwiper4", {
 const swiper5 = new Swiper(".mySwiper5", {
     slidesPerView: 1,
     spaceBetween: 30,
+    freeMode: true,
     loop: true,
     autoplay: {
         delay: 3000,
@@ -129,6 +139,7 @@ const swiper5 = new Swiper(".mySwiper5", {
 var swiper4 = new Swiper(".mySwiper6", {
     slidesPerView: 5.5,
     loop: true,
+    freeMode: true,
     grid: {
         rows: 2,
     },
@@ -175,7 +186,7 @@ var swiper4 = new Swiper(".mySwiper6", {
         },
         // وقتی زیر 300px بود
         300: {
-            slidesPerView: 1.7,
+            slidesPerView: 1.2,
             spaceBetween: 10,
             grid: {
                 rows: 2,
@@ -194,6 +205,7 @@ var swiper4 = new Swiper(".mySwiper6", {
 var swiperComments = new Swiper(".mySwiper-comment", {
     slidesPerView: 3,
     spaceBetween: 20,
+    freeMode: true,
     loop: true,
     autoplay: {
         delay: 2000, // هر ۳ ثانیه
@@ -215,12 +227,12 @@ var swiperComments = new Swiper(".mySwiper-comment", {
         },
         // وقتی حداقل 480px بود
         480: {
-            slidesPerView: 1.9,
+            slidesPerView: 1,
             spaceBetween: 15,
         },
         // وقتی زیر 300px بود
         300: {
-            slidesPerView: 1.1,
+            slidesPerView: 1,
             spaceBetween: 10,
         },
         250: {
@@ -233,12 +245,14 @@ var swiperComments = new Swiper(".mySwiper-comment", {
 var swiperBlog = new Swiper(".mySwiper-blog", {
     slidesPerView: 'auto',
     spaceBetween: 20,
+    freeMode: true,
     grabCursor: true,
 });
 
 var swiperBlog = new Swiper(".mySwiper10", {
     slidesPerView: 10,
     spaceBetween: 20,
+    freeMode: true,
     grabCursor: true,
 
     breakpoints: {
@@ -276,6 +290,7 @@ var swiper11 = new Swiper(".mySwiper11", {
     slidesPerView: 4,
     spaceBetween: 0,
     grabCursor: true,
+    freeMode: true,
     breakpoints: {
         1024: {
             slidesPerView: 4,
@@ -297,7 +312,7 @@ var swiper11 = new Swiper(".mySwiper11", {
         },
         // وقتی زیر 300px بود
         300: {
-            slidesPerView: 2.1,
+            slidesPerView: 1.5,
             spaceBetween: 10,
         },
         280: {
@@ -311,6 +326,7 @@ var swiper12 = new Swiper(".mySwiper12", {
     slidesPerView: 4,
     spaceBetween: 0,
     grabCursor: true,
+    freeMode: true,
     breakpoints: {
         1024: {
             slidesPerView: 4,
@@ -358,6 +374,7 @@ var swiper12 = new Swiper(".mySwiper12", {
 
 var swiper14 = new Swiper(".mySwiper14", {
     slidesPerView: 5.5,
+    freeMode: true,
     grid: {
         rows: 2,
     },

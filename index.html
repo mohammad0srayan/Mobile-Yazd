@@ -14,7 +14,7 @@
     <link rel="icon website" href="./assets/logo-mobile.png"/>
     <title>یزد موبایل</title>
 </head>
-<body>
+<body class="max-[500px]:px-[1rem]">
 
 <!-- Sidebar -->
 <div id="sidebar-main" class="fixed top-0 right-0 bg-backSite w-full h-[100vh] z-50">
@@ -234,19 +234,20 @@
     </div>
 
     <!--  Navbar Responsive  -->
-    <div class="p-[1rem] border-borderL border-b-[1px] min-[1104px]:hidden">
+    <div class="py-[0.5rem] border-borderL border-b-[1px] min-[1104px]:hidden">
         <div class="flex justify-between items-center">
 
-            <div class="flex items-center gap-[1rem]">
-                <span id="menu-btn" class="flex items-center text-4xl cursor-pointer"><ion-icon
+            <div class="flex items-center gap-[1rem] relative">
+                <span id="menu-btn" class="flex items-center text-3xl cursor-pointer"><ion-icon
                         name="menu-outline"></ion-icon></span>
                 <img class="w-[8rem] h-[4rem] object-cover" src="./assets/logo-mobile.png"/>
             </div>
 
-            <div>
-                <button class="box-shadow--items--box text-brand p-[0.8rem] rounded-full cursor-pointer">
-                    <i class="fa-solid fa-cart-shopping"></i>
+            <div class="relative">
+                <button class="box-shadow--items--box text-brand p-[0.8rem] rounded-full cursor-pointer flex items-center text-[1.1rem]">
+                    <ion-icon name="basket-outline"></ion-icon>
                 </button>
+                <span class="absolute text-[0.7rem] top-[-0.3rem] left-[-0.3rem] flex justify-center items-center rounded-full bg-white text-brand text-brand box-shadow--items w-[1.2rem] h-[1.2rem]">0</span>
             </div>
         </div>
 
@@ -262,24 +263,24 @@
     <!--  Main  -->
     <div class="mt-[1rem] flex gap-[1rem] max-[1280px]:flex-col max-[1280px]:justify-center max-[1280px]:items-center">
         <!-- Swiper -->
-        <div class="swiper mySwiper">
+        <div class="swiper mySwiper" dir="ltr">
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
-                    <img class="w-full max-[1280px]:h-[19rem] max-[480px]:object-cover" src="slider/1.jpg"/>
+                    <img class="w-full max-[1280px]:h-[16rem] max-[500px]:h-[13rem]" src="slider/1.jpg"/>
                 </div>
                 <div class="swiper-slide">
-                    <img class="w-full max-[1280px]:h-[19rem] max-[480px]:object-cover" src="slider/2.jpg"/>
+                    <img class="w-full max-[1280px]:h-[16rem] max-[500px]:h-[13rem]" src="slider/2.jpg"/>
                 </div>
                 <div class="swiper-slide">
-                    <img class="w-full max-[1280px]:h-[19rem] max-[480px]:object-cover" src="slider/3.jpg"/>
+                    <img class="w-full max-[1280px]:h-[16rem] max-[500px]:h-[13rem]" src="slider/3.jpg"/>
                 </div>
             </div>
             <div class="swiper-button-next"></div>
             <div class="swiper-button-prev"></div>
-            <div class="swiper-pagination"></div>
+            <div class="swiper-pagination" style="position: relative;top: 0.3rem;"></div>
         </div>
 
-        <div class="relative w-[25rem] h-max p-[0.5rem] rounded-2xl text-sm overflow-hidden group max-[400px]:w-full">
+        <div class="relative w-[25rem] h-max p-[0.5rem] rounded-2xl text-sm overflow-hidden group max-[400px]:w-full max-[1280px]:hidden max-[500px]:block">
             <!-- 👇 گرادیانت دور باکس -->
             <div class="absolute inset-0 rounded-2xl p-[1px] bg-gradient-to-r from-brand via-[#7b61ff] to-[#00c6ff]"></div>
 
@@ -346,15 +347,110 @@
                     </div>
 
                     <!-- pagination -->
-                    <div class="swiper-pagination"></div>
+                    <div class="swiper-pagination" style="position: relative;top: 0.3rem;"></div>
                 </div>
             </div>
         </div>
 
     </div>
 
+
+    <div class="min-[500px]:hidden">
+        <div class="flex items-center justify-center text-center w-full mt-[4rem]">
+            <div class="flex-1 h-[1px] bg-borderL mx-4"></div>
+            <h2 class="font-semibold text-2xl whitespace-nowrap">
+                دسته‌های <span class="text-brand">منتخب</span>
+            </h2>
+            <div class="flex-1 h-[1px] bg-borderL mx-4"></div>
+        </div>
+        <!--  Cart Product  -->
+        <div class="grid-custom-box-items mt-[2rem]">
+            <div class="text-center box-down-main cursor-pointer">
+                <div class="box-shadow--items rounded-xl p-[1rem] ease-in-out duration-300 border-borderL border-[1px] box-img-footer-box flex items-center justify-center">
+                    <img class="w-[4rem] h-[4rem] object-cover rounded-xl" src="cart/7.jpg" alt=""/>
+                </div>
+                <div class="mt-[0.5rem]">
+                    <span class="text-sm text-topbar footer-title--box ease-in-out duration-300">میکروفن</span>
+                </div>
+            </div>
+            <div class="text-center box-down-main">
+                <div class="box-shadow--items rounded-xl p-[1rem] ease-in-out duration-300 border-borderL border-[1px] box-img-footer-box flex items-center justify-center">
+                    <img class="w-[4rem] h-[4rem] object-cover rounded-xl" src="cart/3.webp" alt=""/>
+                </div>
+                <div class="mt-[0.5rem]">
+                    <span class="text-sm text-topbar footer-title--box">فلش مموری</span>
+                </div>
+            </div>
+            <div class="text-center box-down-main cursor-pointer">
+                <div class="box-shadow--items rounded-xl p-[1rem] ease-in-out duration-300 border-borderL border-[1px] box-img-footer-box flex items-center justify-center">
+                    <img class="w-[4rem] h-[4rem] object-cover rounded-xl" src="cart/2.jpg" alt=""/>
+                </div>
+                <div class="mt-[0.5rem]">
+                    <span class="text-sm text-topbar footer-title--box">پاورپانک</span>
+                </div>
+            </div>
+            <div class="text-center box-down-main cursor-pointer">
+                <div class="box-shadow--items rounded-xl p-[1rem] ease-in-out duration-300 border-borderL border-[1px] box-img-footer-box flex items-center justify-center">
+                    <img class="w-[4rem] h-[4rem] object-cover rounded-xl" src="cart/5.png" alt=""/>
+                </div>
+                <div class="mt-[0.5rem]">
+                    <span class="text-sm text-topbar footer-title--box">قالب موبایل</span>
+                </div>
+            </div>
+            <div class="text-center box-down-main cursor-pointer">
+                <div class="box-shadow--items rounded-xl p-[1rem] ease-in-out duration-300 border-borderL border-[1px] box-img-footer-box flex items-center justify-center">
+                    <img class="w-[4rem] h-[4rem] object-cover rounded-xl" src="cart/6.webp" alt=""/>
+                </div>
+                <div class="mt-[0.5rem]">
+                    <span class="text-sm text-topbar footer-title--box">کابل شارژ</span>
+                </div>
+            </div>
+            <div class="text-center box-down-main cursor-pointer">
+                <div class="box-shadow--items rounded-xl p-[1rem] ease-in-out duration-300 border-borderL border-[1px] box-img-footer-box flex items-center justify-center">
+                    <img class="w-[4rem] h-[4rem] object-cover rounded-xl" src="cart/8.webp" alt=""/>
+                </div>
+                <div class="mt-[0.5rem]">
+                    <span class="text-sm text-topbar footer-title--box">آداپتور</span>
+                </div>
+            </div>
+            <div class="text-center box-down-main cursor-pointer">
+                <div class="box-shadow--items rounded-xl p-[1rem] ease-in-out duration-300 border-borderL border-[1px] box-img-footer-box flex items-center justify-center">
+                    <img class="w-[4rem] h-[4rem] object-cover rounded-xl" src="cart/4.png" alt=""/>
+                </div>
+                <div class="mt-[0.5rem]">
+                    <span class="text-sm text-topbar footer-title--box">ساعت هوشمند</span>
+                </div>
+            </div>
+            <div class="text-center box-down-main cursor-pointer">
+                <div class="box-shadow--items rounded-xl p-[1rem] ease-in-out duration-300 border-borderL border-[1px] box-img-footer-box flex items-center justify-center">
+                    <img class="w-[4rem] h-[4rem] object-cover rounded-xl" src="./cart/10.png" alt=""/>
+                </div>
+                <div class="mt-[0.5rem]">
+                    <span class="text-sm text-topbar footer-title--box">هدفون</span>
+                </div>
+            </div>
+            <div class="text-center box-down-main cursor-pointer">
+                <div class="box-shadow--items rounded-xl p-[1rem] ease-in-out duration-300 border-borderL border-[1px] box-img-footer-box flex items-center justify-center">
+                    <img class="w-[4rem] h-[4rem] object-cover rounded-xl" src="./cart/9.png" alt=""/>
+                </div>
+                <div class="mt-[0.5rem]">
+                    <span class="text-sm text-topbar footer-title--box">اسپیکر</span>
+                </div>
+            </div>
+            <div class="text-center box-down-main cursor-pointer">
+                <div class="box-shadow--items rounded-xl p-[1rem] ease-in-out duration-300 border-borderL border-[1px] box-img-footer-box flex items-center justify-center">
+                    <img class="w-[4rem] h-[4rem] object-cover rounded-xl" src="./cart/11.png" alt=""/>
+                </div>
+                <div class="mt-[0.5rem]">
+                    <span class="text-sm text-topbar footer-title--box">موبایل</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
     <!--  Cart Product  -->
-    <div class="flex flex-row-reverse justify-center items-center gap-[1rem] mt-[5rem] max-[1044px]:hidden">
+    <div class="flex flex-row-reverse justify-center items-center gap-[1rem] mt-[1rem] max-[1044px]:hidden">
         <div class="text-center box-down-main cursor-pointer">
             <div class="box-shadow--items rounded-xl p-[1rem] ease-in-out duration-300 border-borderL border-[1px] box-img-footer-box">
                 <img class="w-[4rem] h-[4rem] object-cover rounded-xl" src="cart/7.jpg" alt=""/>
@@ -438,8 +534,9 @@
     </div>
 </div>
 
+
 <!-- Swiper -->
-<div class="flex justify-center items-center gap-[1rem] mt-[5rem] min-[1044px]:hidden">
+<div class="flex justify-center items-center gap-[1rem] mt-[5rem] min-[1044px]:hidden max-[500px]:hidden">
     <div class="swiper mySwiper10">
         <div class="swiper-wrapper">
             <div class="swiper-slide">
@@ -548,15 +645,9 @@
 
 <!-- Box Products  -->
 <section class="relative mt-[8rem] max-[700px]:p-[1rem]">
-    <img class="absolute top-[8rem] left-0 w-[5rem] h-[15rem]" src="./product/div-box-1-106x300.png" alt=""/>
-    <img class="absolute top-[8rem] right-0 w-[5rem] h-[15rem]" src="./product/div-box-106x300.png" alt=""/>
-    <img class="absolute top-[12rem] left-0 w-[5rem] h-[15rem] min-[641px]:hidden" src="./product/div-box-1-106x300.png"
+    <img class="absolute top-[8rem] left-0 w-[5rem] h-[15rem] max-[1000px]:hidden" src="./product/div-box-1-106x300.png"
          alt=""/>
-    <img class="absolute top-[12rem] right-0 w-[5rem] h-[15rem] min-[641px]:hidden" src="./product/div-box-106x300.png"
-         alt=""/>
-    <img class="absolute top-[16rem] left-0 w-[5rem] h-[15rem] min-[641px]:hidden" src="./product/div-box-1-106x300.png"
-         alt=""/>
-    <img class="absolute top-[16rem] right-0 w-[5rem] h-[15rem] min-[641px]:hidden" src="./product/div-box-106x300.png"
+    <img class="absolute top-[8rem] right-0 w-[5rem] h-[15rem] max-[1000px]:hidden" src="./product/div-box-106x300.png"
          alt=""/>
 
     <div class="box-products max-w-[1390px] mx-auto h-full w-full flex gap-[1rem] max-[642px]:flex-col">
@@ -714,7 +805,7 @@
         <span class="text-white">مشاهده محصولات</span>
     </div>
     <div class="flex min-[678px]:flex-col justify-center items-center max-[687px]:mt-[2rem]">
-        <div class="w-[15rem] h-[15rem] max-[687px]:w-[10rem] max-[687px]:h-[10rem]">
+        <div class="w-[15rem] h-[15rem] max-[687px]:w-[10rem] max-[687px]:h-[10rem] max-[400px]:w-[8rem] max-[400px]:h-[8rem]">
             <img class="w-full h-full object-cover" src="./banner/1.png"/>
         </div>
         <div class="relative flex justify-center items-center max-[678px]:mr-[4rem]">
@@ -729,7 +820,7 @@
                      src="./assets/1-BO24tAdF.png"/>
                 <img class="w-[3rem] h-[4rem] object-cover img-banner max-[678px]:w-[3rem] max-[678px]:h-[3rem] cursor-pointer"
                      src="./assets/3-BLAfopU-.png"/>
-                <img class="w-[1.5rem] h-[4rem] object-cover img-banner max-[678px]:w-[1.5rem] max-[678px]:h-[3rem] cursor-pointer"
+                <img class="w-[1.5rem] h-[4rem] object-cover img-banner max-[678px]:w-[1.2rem] max-[678px]:h-[3rem] cursor-pointer max-[500px]:w-[1.2rem]"
                      src="./assets/2-C33tHLlG.png"/>
             </div>
         </div>
@@ -738,7 +829,7 @@
 
 <section class="mx-auto max-w-[1390px] mt-[5rem] mb-[5rem]">
     <div class="flex justify-between items-center max-[535px]:justify-center gap-[0.5rem]">
-        <h2 class="text-2xl font-semibold max-[431px]:text-xl max-[348px]:text-sm">محصولات جدید<span class="text-brand"> یزد موبایل</span>
+        <h2 class="text-2xl font-semibold max-[431px]:text-xl max-[388px]:text-sm">محصولات جدید<span class="text-brand"> یزد موبایل</span>
         </h2>
         <div class="flex gap-[1rem]">
             <button class="max-[431px]:text-sm max-[431px]:px-[1rem] flex justify-center items-center px-[1.5rem] bg-register text-brand py-[0.5rem] rounded-md border-registerDark border-[1px] cursor-pointer hover:bg-brand ease-in-out duration-300 hover:text-white">
@@ -1057,11 +1148,11 @@
         </div>
     </div>
 
-    <div class="flex justify-center items-center mt-[6rem] px-[8rem] max-[800px]:px-[4rem] max-[600px]:px-0">
-        <img src="./slider/3.jpg" class="w-full h-[15rem] max-[600px]:object-cover" alt=""/>
+    <div class="flex justify-center items-center mt-[2rem] px-[8rem] max-[800px]:px-[4rem] max-[600px]:px-0">
+        <img src="./assets/IMG_9892-1024x313.jpg" class="w-full h-[8rem]" alt=""/>
     </div>
 
-    <div class="mb-[5rem] mt-[10rem]">
+    <div class="mb-[5rem] mt-[2rem]">
         <div class="flex items-center justify-center text-center w-full">
             <div class="flex-1 h-[1px] bg-borderL mx-4"></div>
             <h2 class="font-semibold text-2xl whitespace-nowrap">
@@ -2494,8 +2585,6 @@
         </div>
     </div>
 </div>
-
-<section class="back-linearGradiant w-full h-[5rem] mt-[10rem]"></section>
 
 <footer class="pb-[2rem]">
     <div class="mx-auto max-w-[1390px] mt-[4rem]">
