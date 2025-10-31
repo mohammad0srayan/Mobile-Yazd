@@ -356,8 +356,38 @@ var swiper12 = new Swiper(".mySwiper12", {
     },
 });
 
-var swiper13 = new Swiper(".mySwiper13", {
-    slidesPerView: 5,
-    spaceBetween: 0,
-    grabCursor: true,
+var swiper14 = new Swiper(".mySwiper14", {
+    slidesPerView: 5.5,
+    grid: {
+        rows: 2,
+    },
+    spaceBetween: 10,
+    autoplay: {
+        delay: 2000, // هر ۳ ثانیه
+        disableOnInteraction: false, // با لمس کاربر قطع نشه
+    },
+
+    breakpoints: {
+        1024: {
+            slidesPerView: 2.7,
+            spaceBetween: 10,
+        },
+        // وقتی حداقل 768px بود
+        768: {
+            slidesPerView: 2.5,
+            spaceBetween: 20,
+        },
+        680: {
+            slidesPerView: 2.3,
+            spaceBetween: 15,
+        },
+        440: {
+            slidesPerView: 2,
+            spaceBetween: 15,
+        },
+        300: {
+            slidesPerView: 1,
+            spaceBetween: 15,
+        },
+    },
 });
