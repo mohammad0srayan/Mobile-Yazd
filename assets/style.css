@@ -277,11 +277,11 @@ body {
     justify-content: center;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 1.5rem;
-    @media screen and (max-width: 488px) {
+    @media screen and (max-width: 500px) {
         grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     }
-    @media screen and (max-width: 390px) {
-        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    @media screen and (max-width: 420px) {
+        grid-template-columns: repeat(auto-fit, minmax(110px, 1fr));
     }
 }
 

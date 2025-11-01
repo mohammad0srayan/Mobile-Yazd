@@ -137,7 +137,7 @@ const swiper5 = new Swiper(".mySwiper5", {
 });
 
 var swiper4 = new Swiper(".mySwiper6", {
-    slidesPerView: 5.5,
+    slidesPerView: 5.1,
     loop: true,
     freeMode: true,
     grid: {
@@ -155,7 +155,7 @@ var swiper4 = new Swiper(".mySwiper6", {
 
     breakpoints: {
         1024: {
-            slidesPerView: 5.5,
+            slidesPerView: 4.9,
             spaceBetween: 30,
             grid: {
                 rows: 2,
