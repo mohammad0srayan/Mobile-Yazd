@@ -1407,7 +1407,9 @@ body {
 }
 
 .box-products--images {
-    background: url(../assets/Group-1df0898-6kftKVMr.png) 50% no-repeat
+    @media screen and (min-width: 610px) {
+        background: url(../assets/Group-1df0898-6kftKVMr.png) 50% no-repeat
+    }
 }
 
 .grid-custom {

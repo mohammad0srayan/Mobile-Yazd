@@ -46,15 +46,9 @@ var swiper1 = new Swiper(".mySwiper", {
 var swiper2 = new Swiper(".mySwiper3", {
     slidesPerView: 4,
     spaceBetween: 20,
-    loop: true,
-    freeMode: true,
-    autoplay: {
-        delay: 2000, // هر ۳ ثانیه
-        disableOnInteraction: false, // با لمس کاربر قطع نشه
-    },
     breakpoints: {
         1024: {
-            slidesPerView: 3.5,
+            slidesPerView: 4.5,
             spaceBetween: 10,
         },
         // وقتی حداقل 768px بود
@@ -72,18 +66,18 @@ var swiper2 = new Swiper(".mySwiper3", {
             spaceBetween: 15,
         },
         350: {
-            slidesPerView: 1.5,
+            slidesPerView: 1.2,
             spaceBetween: 15,
         },
         300: {
-            slidesPerView: 1,
+            slidesPerView: 1.1,
             spaceBetween: 15,
         },
     },
 });
 
 var swiper3 = new Swiper(".mySwiper4", {
-    slidesPerView: 5,
+    slidesPerView: 6.2,
     spaceBetween: 20,
     freeMode: true,
     loop: true,
@@ -93,7 +87,7 @@ var swiper3 = new Swiper(".mySwiper4", {
     },
     breakpoints: {
         1024: {
-            slidesPerView: 5.5,
+            slidesPerView: 6.2,
             spaceBetween: 10,
         },
         // وقتی حداقل 768px بود
@@ -121,23 +115,17 @@ var swiper3 = new Swiper(".mySwiper4", {
     },
 });
 
-const swiper5 = new Swiper(".mySwiper5", {
+const swiper5 = new Swiper('.mySwiper5', {
     slidesPerView: 1,
-    spaceBetween: 30,
-    freeMode: true,
     loop: true,
-    autoplay: {
-        delay: 3000,
-        disableOnInteraction: false,
-    },
     pagination: {
-        el: ".swiper-pagination",
+        el: '.swiper-pagination',
         clickable: true,
     },
 });
 
 var swiper4 = new Swiper(".mySwiper6", {
-    slidesPerView: 5.1,
+    slidesPerView: 6,
     loop: true,
     freeMode: true,
     grid: {
@@ -155,8 +143,8 @@ var swiper4 = new Swiper(".mySwiper6", {
 
     breakpoints: {
         1024: {
-            slidesPerView: 4.9,
-            spaceBetween: 30,
+            slidesPerView: 6,
+            spaceBetween: 10,
             grid: {
                 rows: 2,
             },
@@ -244,7 +232,7 @@ var swiperComments = new Swiper(".mySwiper-comment", {
 
 var swiperBlog = new Swiper(".mySwiper-blog", {
     slidesPerView: 'auto',
-    spaceBetween: 20,
+    spaceBetween: 30,
     freeMode: true,
     grabCursor: true,
 });
@@ -307,12 +295,15 @@ var swiper11 = new Swiper(".mySwiper11", {
         },
         // وقتی حداقل 480px بود
         480: {
-            slidesPerView: 2.5,
+            slidesPerView: 2.4,
             spaceBetween: 15,
         },
-        // وقتی زیر 300px بود
+        400: {
+            slidesPerView: 2.4,
+            spaceBetween: 15,
+        },
         300: {
-            slidesPerView: 1.5,
+            slidesPerView: 1.9,
             spaceBetween: 10,
         },
         280: {
@@ -358,11 +349,11 @@ var swiper12 = new Swiper(".mySwiper12", {
             spaceBetween: 15,
         },
         400: {
-            slidesPerView: 1.8,
+            slidesPerView: 1.9,
             spaceBetween: 10,
         },
         300: {
-            slidesPerView: 1.5,
+            slidesPerView: 1.6,
             spaceBetween: 10,
         },
         280: {

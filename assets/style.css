@@ -2,7 +2,7 @@
 
 @font-face {
     font-family: 'IRANYekanX';
-    src: url('assets/IranYekanX/IRANYekanX-Light.ttf');
+    src: url('assets/IranYekanX/PeydaWebFaNum-Medium.woff2');
 }
 
 * {
@@ -40,6 +40,34 @@
     border-radius: 20px;
     background: #fff;
     width: 25px;
+}
+
+/* محفظه‌ی دکمه‌ها */
+.swiper-pagination {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    gap: 1px !important;
+    position: relative !important;
+    bottom: 0 !important;
+}
+
+/* دکمه‌های غیرفعال */
+.swiper-pagination-bullet {
+    width: 8px !important;
+    height: 8px !important;
+    border-radius: 9999px !important;
+    background-color: #fcd5ce !important; /* صورتی کم‌رنگ */
+    opacity: 1 !important;
+    transition: all 0.3s ease !important;
+}
+
+/* دکمه فعال */
+.swiper-pagination-bullet-active {
+    width: 18px !important;
+    height: 8px !important;
+    border-radius: 9999px !important;
+    background-color: #d63400 !important; /* نارنجی-قرمز پررنگ */
 }
 
 .main-header__item {
@@ -149,6 +177,10 @@ body {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 
+.box-shadow--items-comment {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
 .box-shadow--items--box {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
@@ -163,7 +195,9 @@ body {
 }
 
 .box-products--images {
-    background: url("../assets/Group-1df0898-6kftKVMr.png") no-repeat center center;
+    @media screen and (min-width: 610px) {
+        background: url("../assets/Group-1df0898-6kftKVMr.png") no-repeat center center;
+    }
 }
 
 .grid-custom {
@@ -213,7 +247,7 @@ body {
     @media screen and (max-width: 700px) {
         display: none;
     }
-    width: 50rem !important;
+    width: 46rem !important;
 }
 
 .contact-up-image {
@@ -327,11 +361,19 @@ body {
 
 .swiper-button-next,
 .swiper-button-prev {
-    --swiper-navigation-size: 1rem;
-    color: #EC5201;
+    --swiper-navigation-size: 0.9rem;
+    color: rgba(0, 0, 0, 0.8) !important;
 }
 
 .swiper-button-next:hover,
 .swiper-button-prev:hover {
     color: #ffaa33;
+}
+
+.dp-single-carousel-bg-lg-svg .dp-single-carousel-bg-color {
+    color: #ffffff;
+}
+
+.dp-single-carousel-bg .dp-single-carousel-bg-lg-svg .dp-single-carousel-bg-bcolor, .dp-single-carousel-bg .dp-single-carousel-bg-sm-svg .dp-single-carousel-bg-bcolor {
+    fill: #E0E0E0;
 }

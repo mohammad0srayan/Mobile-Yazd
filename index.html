@@ -133,14 +133,14 @@
     </div>
 
     <!-- Navbar -->
-    <div class="mt-[1rem] border-b-[1px] border-borderL pb-[0.8rem] max-[1104px]:hidden">
+    <div class="border-b-[1px] border-borderL pb-[0.8rem] max-[1104px]:hidden">
         <div class="flex justify-between items-center">
             <div class="text-sm flex items-center gap-[1.5rem]">
                 <div><img class="w-[8rem] h-[4rem] object-cover" src="./assets/logo-mobile.png"/></div>
-                <form class="w-[35rem] relative"><span
+                <form class="w-[40rem] relative"><span
                         class="absolute top-[0.6rem] right-[1rem] text-xl text-borderL"><i
                         class="fa-solid fa-magnifying-glass"></i></span> <input
-                        class="border-borderL border-[1px] rounded-3xl py-[0.8rem] px-[3rem] w-full"
+                        class="border-borderL border-[1px] rounded-2xl py-[0.7rem] px-[3rem] w-full placeholder:text-topbar"
                         placeholder="جستجو محصول..."/></form>
             </div>
             <div class="flex items-center gap-[2rem] text-sm"><span
@@ -261,99 +261,209 @@
     </div>
 
     <!--  Main  -->
-    <div class="mt-[1rem] flex gap-[1rem] max-[1280px]:flex-col max-[1280px]:justify-center max-[1280px]:items-center">
+    <div class="mt-[1rem] flex gap-[1rem] max-[1280px]:flex-col max-[1280px]:px-[4rem] max-[1004px]:px-0 max-[1280px]:justify-center max-[1280px]:items-center">
         <!-- Swiper -->
         <div class="swiper mySwiper" dir="ltr">
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
-                    <img class="w-full max-[1280px]:h-[16rem] max-[500px]:h-[13rem]" src="slider/1.jpg"/>
+                    <img class="w-full max-[1280px]:h-[16rem] max-[1004px]:h-[18rem] max-[500px]:h-[13rem]"
+                         src="slider/1.jpg"/>
                 </div>
                 <div class="swiper-slide">
-                    <img class="w-full max-[1280px]:h-[16rem] max-[500px]:h-[13rem]" src="slider/2.jpg"/>
+                    <img class="w-full max-[1280px]:h-[16rem] max-[1004px]:h-[18rem] max-[500px]:h-[13rem]"
+                         src="slider/2.jpg"/>
                 </div>
                 <div class="swiper-slide">
-                    <img class="w-full max-[1280px]:h-[16rem] max-[500px]:h-[13rem]" src="slider/3.jpg"/>
+                    <img class="w-full max-[1280px]:h-[16rem] max-[1004px]:h-[18rem] max-[500px]:h-[13rem]"
+                         src="slider/3.jpg"/>
                 </div>
             </div>
             <div class="swiper-button-next"></div>
             <div class="swiper-button-prev"></div>
-            <div class="swiper-pagination" style="position: relative;top: 0.3rem;"></div>
+            <div class="swiper-pagination" style="position: relative;top: -0.8rem;color: #DE3402;"></div>
         </div>
 
-        <div class="relative w-[25rem] h-max p-[0.5rem] rounded-2xl text-sm overflow-hidden group max-[400px]:w-full max-[1280px]:hidden max-[500px]:block">
-            <!-- 👇 گرادیانت دور باکس -->
-            <div class="absolute inset-0 rounded-2xl p-[1px] bg-gradient-to-r from-brand via-[#7b61ff] to-[#00c6ff]"></div>
+        <div class="max-[1004px]:hidden">
+            <div class="dp-single-carousel-bg position-relative relative">
 
-            <!-- 👇 پس‌زمینه داخلی با سایه و تورفتگی -->
-            <div class="relative bg-[#fff] rounded-[inherit] p-[1rem] border border-white/10 shadow-[inset_0_2px_10px_rgba(255,255,255,0.1),0_10px_20px_rgba(0,0,0,0.3)]">
+                <svg xmlns="http://www.w3.org/2000/svg" width="320" height="322" viewBox="0 0 320 322" fill="none"
+                     class="dp-single-carousel-bg-lg-svg">
+                    <mask id="path-1-inside-1_2097_14060" fill="white">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                              d="M320 24C320 10.7452 309.255 0 296 0H24C10.7452 0 0 10.7452 0 24V298C0 311.255 10.7452 322 24 322H296C309.255 322 320 311.255 320 298V249.4C320 236.145 304.965 223.756 304.04 210.534C304.013 210.159 304 209.781 304 209.4V112.6C304 112.219 304.013 111.841 304.04 111.466C304.965 98.2436 320 85.8549 320 72.6V24Z"></path>
+                    </mask>
+                    <path class="dp-single-carousel-bg-color" fill-rule="evenodd" clip-rule="evenodd"
+                          d="M320 24C320 10.7452 309.255 0 296 0H24C10.7452 0 0 10.7452 0 24V298C0 311.255 10.7452 322 24 322H296C309.255 322 320 311.255 320 298V249.4C320 236.145 304.965 223.756 304.04 210.534C304.013 210.159 304 209.781 304 209.4V112.6C304 112.219 304.013 111.841 304.04 111.466C304.965 98.2436 320 85.8549 320 72.6V24Z"
+                          fill="currentcolor"></path>
+                    <path class="dp-single-carousel-bg-bcolor"
+                          d="M24 1H296V-1H24V1ZM1 298V24H-1V298H1ZM296 321H24V323H296V321ZM319 249.4V298H321V249.4H319ZM305.037 210.464C305.013 210.113 305 209.758 305 209.4H303C303 209.805 303.014 210.206 303.042 210.604L305.037 210.464ZM305 209.4V112.6H303V209.4H305ZM305 112.6C305 112.242 305.013 111.887 305.037 111.536L303.042 111.396C303.014 111.794 303 112.195 303 112.6H305ZM319 24V72.6H321V24H319ZM305.037 111.536C305.479 105.218 309.305 99.0416 313.223 92.5627C317.063 86.212 321 79.5565 321 72.6H319C319 78.8984 315.42 85.0647 311.511 91.5277C307.68 97.8624 303.525 104.492 303.042 111.396L305.037 111.536ZM321 249.4C321 242.444 317.063 235.788 313.223 229.437C309.305 222.958 305.48 216.782 305.037 210.464L303.042 210.604C303.525 217.508 307.68 224.138 311.511 230.472C315.42 236.935 319 243.102 319 249.4H321ZM296 323C309.807 323 321 311.807 321 298H319C319 310.703 308.703 321 296 321V323ZM-1 298C-1 311.807 10.1929 323 24 323V321C11.2974 321 1 310.703 1 298H-1ZM296 1C308.703 1 319 11.2975 319 24H321C321 10.1929 309.807 -1 296 -1V1ZM24 -1C10.1929 -1 -1 10.1929 -1 24H1C1 11.2975 11.2975 1 24 1V-1Z"
+                          fill="currentcolor" mask="url(#path-1-inside-1_2097_14060)"></path>
+                </svg>
 
-                <div class="flex items-center justify-between">
-                    <span class="text-topbar text-[0.7rem]">پیشنهادات امروز</span>
-                    <span class="p-[0.1rem] text-[0.7rem] pl-0 rounded-3xl back-linearGradiant text-white flex items-center gap-1">
-                هنوز شروع نشده
-                <span class="p-[0.5rem] bg-white text-brand rounded-4xl">
-                    <i class="fa-regular fa-clock"></i>
-                </span>
-            </span>
-                </div>
+                <div class="absolute top-0 right-0 w-full">
+                    <div class="flex items-center w-full justify-between py-[1rem] px-[1rem]">
+                        <span class="text-md text-topbar">پیشنهادات امروز</span>
 
-                <!-- Swiper -->
-                <div class="swiper mySwiper5 cursor-pointer h-[400px] mt-[2rem]">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide flex justify-center items-center">
-                            <div class="w-full text-center">
-                                <div class="flex justify-center items-center">
-                                    <img class="w-[10rem] h-[8rem] object-cover rounded-xl"
-                                         src="product/MG_8348-scaled-e1757085877441-300x215.jpg"/>
-                                </div>
-                                <div class="flex items-center justify-between mt-[1.5rem] px-4">
-                                    <button class="back-linearGradiant text-white p-[0.8rem] rounded-xl cursor-pointer">
-                                        <i class="fa-solid fa-cart-shopping"></i>
-                                    </button>
-                                    <span class="text-brand font-semibold">3,800,000 تومان</span>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="swiper-slide flex justify-center items-center">
-                            <div class="w-full text-center">
-                                <div class="flex justify-center items-center">
-                                    <img class="w-[10rem] h-[8rem] object-cover rounded-xl"
-                                         src="product/11bE5kYgJtMjmoIHGOzaRUlQOMi3BhSTnRi2bch1UR5we29MPN-300x300.jpg"/>
-                                </div>
-                                <div class="flex items-center justify-between mt-[1.5rem] px-4">
-                                    <button class="back-linearGradiant text-white p-[0.8rem] rounded-xl cursor-pointer">
-                                        <i class="fa-solid fa-cart-shopping"></i>
-                                    </button>
-                                    <span class="text-brand font-semibold">3,100,000 تومان</span>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="swiper-slide flex justify-center items-center">
-                            <div class="w-full text-center">
-                                <div class="flex justify-center items-center">
-                                    <img class="w-[10rem] h-[8rem] object-cover rounded-xl"
-                                         src="product/ksc-1092-2--300x300.jpg"/>
-                                </div>
-                                <div class="flex items-center justify-between mt-[1.5rem] px-4">
-                                    <button class="back-linearGradiant text-white p-[0.8rem] rounded-xl cursor-pointer">
-                                        <i class="fa-solid fa-cart-shopping"></i>
-                                    </button>
-                                    <span class="text-brand font-semibold">500,000 تومان</span>
-                                </div>
-                            </div>
-                        </div>
+                        <span class="pr-[0.1rem] pl-0 text-[0.7rem] rounded-3xl back-linearGradiant text-white flex items-center gap-1">
+                            هنوز شروع نشده
+                        <span class="w-[2rem] h-[2rem] rounded-full flex items-center justify-center bg-white text-brand">
+                            <span class="w-[1.5rem] h-[1.5rem] rounded-full flex items-center justify-center bg-brand text-white">
+                                <i class="fa-regular fa-clock"></i>
+                            </span>
+                        </span>
+                    </span>
                     </div>
 
-                    <!-- pagination -->
-                    <div class="swiper-pagination" style="position: relative;top: 0.3rem;"></div>
+                    <!-- Swiper -->
+                    <div class="swiper mySwiper5 cursor-pointer h-[400px] mt-[2rem]">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide flex justify-center items-center">
+                                <div class="w-full text-center">
+                                    <div class="flex justify-center items-center">
+                                        <img class="w-[10rem] h-[8rem] object-cover rounded-xl"
+                                             src="product/MG_8348-scaled-e1757085877441-300x215.jpg"/>
+                                    </div>
+                                    <div class="flex items-center justify-between mt-[1.5rem] px-4">
+                                        <button class="back-linearGradiant text-white p-[0.8rem] rounded-xl cursor-pointer">
+                                            <i class="fa-solid fa-cart-shopping"></i>
+                                        </button>
+                                        <span class="text-brand font-semibold">3,800,000 تومان</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide flex justify-center items-center">
+                                <div class="w-full text-center">
+                                    <div class="flex justify-center items-center">
+                                        <img class="w-[10rem] h-[8rem] object-cover rounded-xl"
+                                             src="product/11bE5kYgJtMjmoIHGOzaRUlQOMi3BhSTnRi2bch1UR5we29MPN-300x300.jpg"/>
+                                    </div>
+                                    <div class="flex items-center justify-between mt-[1.5rem] px-4">
+                                        <button class="back-linearGradiant text-white p-[0.8rem] rounded-xl cursor-pointer">
+                                            <i class="fa-solid fa-cart-shopping"></i>
+                                        </button>
+                                        <span class="text-brand font-semibold">3,100,000 تومان</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide flex justify-center items-center">
+                                <div class="w-full text-center">
+                                    <div class="flex justify-center items-center">
+                                        <img class="w-[10rem] h-[8rem] object-cover rounded-xl"
+                                             src="product/ksc-1092-2--300x300.jpg"/>
+                                    </div>
+                                    <div class="flex items-center justify-between mt-[1.5rem] px-4">
+                                        <button class="back-linearGradiant text-white p-[0.8rem] rounded-xl cursor-pointer">
+                                            <i class="fa-solid fa-cart-shopping"></i>
+                                        </button>
+                                        <span class="text-brand font-semibold">500,000 تومان</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- pagination -->
+                        <div class="swiper-pagination" style="position: relative;"></div>
+                    </div>
                 </div>
             </div>
+
         </div>
 
-    </div>
+        <div class="min-[500px]:hidden">
+            <div class="dp-single-carousel-bg position-relative relative">
 
+                <svg xmlns="http://www.w3.org/2000/svg" width="344" height="198" viewBox="0 0 344 198" fill="none" class="dp-single-carousel-bg-sm-svg">
+                    <g filter="url(#filter0_d_124_1588)">
+                        <mask id="path-1-inside-1_124_1588" fill="white">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M336 20C336 11.1634 328.837 4 320 4L24 4C15.1634 4 8 11.1634 8 20L8 170C8 178.837 15.1634 186 24 186L320 186C328.837 186 336 178.837 336 170V150.709C336 142.033 326 133.676 326 125V65C326 56.3244 336 47.967 336 39.2914L336 20Z"></path>
+                        </mask>
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M336 20C336 11.1634 328.837 4 320 4L24 4C15.1634 4 8 11.1634 8 20L8 170C8 178.837 15.1634 186 24 186L320 186C328.837 186 336 178.837 336 170V150.709C336 142.033 326 133.676 326 125V65C326 56.3244 336 47.967 336 39.2914L336 20Z" fill="white" class="dp-single-carousel-bg-color"></path>
+                        <path class="" d="M336 39.2914H335H336ZM320 186V187V186ZM336 20H337H336ZM24 5L320 5V3L24 3V5ZM9 170L9 20H7L7 170H9ZM320 185L24 185V187L320 187V185ZM335 150.709V170H337V150.709H335ZM327 125V65H325V125H327ZM335 20L335 39.2914H337L337 20L335 20ZM327 65C327 60.9882 329.322 56.9797 331.862 52.652C334.322 48.4632 337 43.9552 337 39.2914H335C335 43.3033 332.678 47.3117 330.138 51.6394C327.678 55.8282 325 60.3362 325 65L327 65ZM337 150.709C337 146.045 334.322 141.537 331.862 137.348C329.322 133.02 327 129.012 327 125H325C325 129.664 327.678 134.172 330.138 138.361C332.678 142.688 335 146.697 335 150.709H337ZM320 187C329.389 187 337 179.389 337 170H335C335 178.284 328.284 185 320 185V187ZM7 170C7 179.389 14.6112 187 24 187V185C15.7157 185 9 178.284 9 170H7ZM320 5C328.284 5 335 11.7157 335 20L337 20C337 10.6112 329.389 3 320 3V5ZM24 3C14.6112 3 7 10.6112 7 20H9C9 11.7157 15.7157 5 24 5V3Z" fill="#666666" fill-opacity="0.1" mask="url(#path-1-inside-1_124_1588)"></path>
+                    </g>
+
+                </svg>
+
+                <div class="absolute top-0 right-0 w-full">
+                    <div class="flex items-center w-full justify-between py-[1rem] px-[2rem]">
+                        <span class="text-md text-topbar text-sm">پیشنهادات امروز</span>
+
+                        <span class="pr-[0.1rem] pl-0 text-[0.7rem] rounded-3xl text-brand flex items-center gap-1">
+                            هنوز شروع نشده
+                        <span class="w-[2rem] h-[2rem] rounded-full flex items-center justify-center bg-white text-brand">
+                            <span class="w-[1.5rem] h-[1.5rem] rounded-full flex items-center justify-center bg-brand text-white">
+                                <i class="fa-regular fa-clock"></i>
+                            </span>
+                        </span>
+                    </span>
+                    </div>
+
+                    <div class="px-[2rem]">
+                        <!-- Swiper -->
+                        <div class="swiper mySwiper5 cursor-pointer">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="w-full h-full flex gap-x-[1rem] text-right">
+                                        <div class="w-[6rem] h-[6rem]">
+                                            <img class="w-full h-full object-cover" src="./product/1-min-18-300x300.jpg" />
+                                        </div>
+                                        <div class="mt-[0.5rem]">
+                                            <span class="text-sm text-topbar">اسپیکر وایلس قابل حمل RSES S-55</span>
+                                            <div class="flex items-center justify-between w-full">
+                                                <button class="back-linearGradiant text-white text-md w-[2.5rem] h-[2.5rem] flex items-center justify-center rounded-xl cursor-pointer">
+                                                    <i class="fa-solid fa-cart-shopping"></i>
+                                                </button>
+                                                <span class="text-brand font-semibold text-sm">500,000 تومان</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <div class="w-full h-full flex gap-x-[1rem] text-right">
+                                        <div class="w-[6rem] h-[6rem]">
+                                            <img class="w-full h-full object-cover" src="./product/11bE5kYgJtMjmoIHGOzaRUlQOMi3BhSTnRi2bch1UR5we29MPN-300x300.jpg" />
+                                        </div>
+                                        <div class="mt-[0.5rem]">
+                                            <span class="text-sm text-topbar">اسپیکر وایلس قابل حمل RSES S-55</span>
+                                            <div class="flex items-center justify-between w-full">
+                                                <button class="back-linearGradiant text-white text-md w-[2.5rem] h-[2.5rem] flex items-center justify-center rounded-xl cursor-pointer">
+                                                    <i class="fa-solid fa-cart-shopping"></i>
+                                                </button>
+                                                <span class="text-brand font-semibold text-sm">500,000 تومان</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <div class="w-full h-full flex gap-x-[1rem] text-right">
+                                        <div class="w-[6rem] h-[6rem]">
+                                            <img class="w-full h-full object-cover" src="./product/MG_8348-scaled-e1757085877441-300x215.jpg" />
+                                        </div>
+                                        <div class="mt-[0.5rem]">
+                                            <span class="text-sm text-topbar">اسپیکر وایلس قابل حمل RSES S-55</span>
+                                            <div class="flex items-center justify-between w-full">
+                                                <button class="back-linearGradiant text-white text-md w-[2.5rem] h-[2.5rem] flex items-center justify-center rounded-xl cursor-pointer">
+                                                    <i class="fa-solid fa-cart-shopping"></i>
+                                                </button>
+                                                <span class="text-brand font-semibold text-sm">500,000 تومان</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- pagination -->
+                            <div class="swiper-pagination" style="position: relative;"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
 
     <div class="min-[500px]:hidden">
         <div class="flex items-center justify-center text-center w-full mt-[4rem]">
@@ -366,7 +476,7 @@
         <!--  Cart Product  -->
         <div class="grid-custom-box-items mt-[2rem]">
             <div class="text-center box-down-main cursor-pointer">
-                <div class="box-shadow--items rounded-xl p-[1rem] ease-in-out duration-300 border-borderL border-[1px] box-img-footer-box flex items-center justify-center">
+                <div class="box-shadow--items-comment rounded-xl p-[1rem] ease-in-out duration-300 box-img-footer-box">
                     <img class="w-[4rem] h-[4rem] object-cover rounded-xl" src="cart/7.jpg" alt=""/>
                 </div>
                 <div class="mt-[0.5rem]">
@@ -374,7 +484,7 @@
                 </div>
             </div>
             <div class="text-center box-down-main">
-                <div class="box-shadow--items rounded-xl p-[1rem] ease-in-out duration-300 border-borderL border-[1px] box-img-footer-box flex items-center justify-center">
+                <div class="box-shadow--items-comment rounded-xl p-[1rem] ease-in-out duration-300 box-img-footer-box">
                     <img class="w-[4rem] h-[4rem] object-cover rounded-xl" src="cart/3.webp" alt=""/>
                 </div>
                 <div class="mt-[0.5rem]">
@@ -382,7 +492,7 @@
                 </div>
             </div>
             <div class="text-center box-down-main cursor-pointer">
-                <div class="box-shadow--items rounded-xl p-[1rem] ease-in-out duration-300 border-borderL border-[1px] box-img-footer-box flex items-center justify-center">
+                <div class="box-shadow--items-comment rounded-xl p-[1rem] ease-in-out duration-300 box-img-footer-box">
                     <img class="w-[4rem] h-[4rem] object-cover rounded-xl" src="cart/2.jpg" alt=""/>
                 </div>
                 <div class="mt-[0.5rem]">
@@ -390,7 +500,7 @@
                 </div>
             </div>
             <div class="text-center box-down-main cursor-pointer">
-                <div class="box-shadow--items rounded-xl p-[1rem] ease-in-out duration-300 border-borderL border-[1px] box-img-footer-box flex items-center justify-center">
+                <div class="box-shadow--items-comment rounded-xl p-[1rem] ease-in-out duration-300 box-img-footer-box">
                     <img class="w-[4rem] h-[4rem] object-cover rounded-xl" src="cart/5.png" alt=""/>
                 </div>
                 <div class="mt-[0.5rem]">
@@ -398,7 +508,7 @@
                 </div>
             </div>
             <div class="text-center box-down-main cursor-pointer">
-                <div class="box-shadow--items rounded-xl p-[1rem] ease-in-out duration-300 border-borderL border-[1px] box-img-footer-box flex items-center justify-center">
+                <div class="box-shadow--items-comment rounded-xl p-[1rem] ease-in-out duration-300 box-img-footer-box">
                     <img class="w-[4rem] h-[4rem] object-cover rounded-xl" src="cart/6.webp" alt=""/>
                 </div>
                 <div class="mt-[0.5rem]">
@@ -406,7 +516,7 @@
                 </div>
             </div>
             <div class="text-center box-down-main cursor-pointer">
-                <div class="box-shadow--items rounded-xl p-[1rem] ease-in-out duration-300 border-borderL border-[1px] box-img-footer-box flex items-center justify-center">
+                <div class="box-shadow--items-comment rounded-xl p-[1rem] ease-in-out duration-300 box-img-footer-box">
                     <img class="w-[4rem] h-[4rem] object-cover rounded-xl" src="cart/8.webp" alt=""/>
                 </div>
                 <div class="mt-[0.5rem]">
@@ -414,7 +524,7 @@
                 </div>
             </div>
             <div class="text-center box-down-main cursor-pointer">
-                <div class="box-shadow--items rounded-xl p-[1rem] ease-in-out duration-300 border-borderL border-[1px] box-img-footer-box flex items-center justify-center">
+                <div class="box-shadow--items-comment rounded-xl p-[1rem] ease-in-out duration-300 box-img-footer-box">
                     <img class="w-[4rem] h-[4rem] object-cover rounded-xl" src="cart/4.png" alt=""/>
                 </div>
                 <div class="mt-[0.5rem]">
@@ -422,7 +532,7 @@
                 </div>
             </div>
             <div class="text-center box-down-main cursor-pointer">
-                <div class="box-shadow--items rounded-xl p-[1rem] ease-in-out duration-300 border-borderL border-[1px] box-img-footer-box flex items-center justify-center">
+                <div class="box-shadow--items-comment rounded-xl p-[1rem] ease-in-out duration-300 box-img-footer-box">
                     <img class="w-[4rem] h-[4rem] object-cover rounded-xl" src="./cart/10.png" alt=""/>
                 </div>
                 <div class="mt-[0.5rem]">
@@ -430,7 +540,7 @@
                 </div>
             </div>
             <div class="text-center box-down-main cursor-pointer">
-                <div class="box-shadow--items rounded-xl p-[1rem] ease-in-out duration-300 border-borderL border-[1px] box-img-footer-box flex items-center justify-center">
+                <div class="box-shadow--items-comment rounded-xl p-[1rem] ease-in-out duration-300 box-img-footer-box">
                     <img class="w-[4rem] h-[4rem] object-cover rounded-xl" src="./cart/9.png" alt=""/>
                 </div>
                 <div class="mt-[0.5rem]">
@@ -438,7 +548,7 @@
                 </div>
             </div>
             <div class="text-center box-down-main cursor-pointer">
-                <div class="box-shadow--items rounded-xl p-[1rem] ease-in-out duration-300 border-borderL border-[1px] box-img-footer-box flex items-center justify-center">
+                <div class="box-shadow--items-comment rounded-xl p-[1rem] ease-in-out duration-300 box-img-footer-box">
                     <img class="w-[4rem] h-[4rem] object-cover rounded-xl" src="./cart/11.png" alt=""/>
                 </div>
                 <div class="mt-[0.5rem]">
@@ -450,9 +560,9 @@
 
 
     <!--  Cart Product  -->
-    <div class="flex flex-row-reverse justify-center items-center gap-[1rem] mt-[1rem] max-[1044px]:hidden">
+    <div class="flex flex-row-reverse justify-center items-center gap-[1.5rem] mt-[5rem] max-[1044px]:hidden">
         <div class="text-center box-down-main cursor-pointer">
-            <div class="box-shadow--items rounded-xl p-[1rem] ease-in-out duration-300 border-borderL border-[1px] box-img-footer-box">
+            <div class="box-shadow--items-comment rounded-xl p-[1rem] ease-in-out duration-300 box-img-footer-box">
                 <img class="w-[4rem] h-[4rem] object-cover rounded-xl" src="cart/7.jpg" alt=""/>
             </div>
             <div class="mt-[0.5rem]">
@@ -460,7 +570,7 @@
             </div>
         </div>
         <div class="text-center box-down-main">
-            <div class="box-shadow--items rounded-xl p-[1rem] ease-in-out duration-300 border-borderL border-[1px] box-img-footer-box">
+            <div class="box-shadow--items-comment rounded-xl p-[1rem] ease-in-out duration-300 box-img-footer-box">
                 <img class="w-[4rem] h-[4rem] object-cover rounded-xl" src="cart/3.webp" alt=""/>
             </div>
             <div class="mt-[0.5rem]">
@@ -468,7 +578,7 @@
             </div>
         </div>
         <div class="text-center box-down-main cursor-pointer">
-            <div class="box-shadow--items rounded-xl p-[1rem] ease-in-out duration-300 border-borderL border-[1px] box-img-footer-box">
+            <div class="box-shadow--items-comment rounded-xl p-[1rem] ease-in-out duration-300 box-img-footer-box">
                 <img class="w-[4rem] h-[4rem] object-cover rounded-xl" src="cart/2.jpg" alt=""/>
             </div>
             <div class="mt-[0.5rem]">
@@ -476,7 +586,7 @@
             </div>
         </div>
         <div class="text-center box-down-main cursor-pointer">
-            <div class="box-shadow--items rounded-xl p-[1rem] ease-in-out duration-300 border-borderL border-[1px] box-img-footer-box">
+            <div class="box-shadow--items-comment rounded-xl p-[1rem] ease-in-out duration-300 box-img-footer-box">
                 <img class="w-[4rem] h-[4rem] object-cover rounded-xl" src="cart/5.png" alt=""/>
             </div>
             <div class="mt-[0.5rem]">
@@ -484,7 +594,7 @@
             </div>
         </div>
         <div class="text-center box-down-main cursor-pointer">
-            <div class="box-shadow--items rounded-xl p-[1rem] ease-in-out duration-300 border-borderL border-[1px] box-img-footer-box">
+            <div class="box-shadow--items-comment rounded-xl p-[1rem] ease-in-out duration-300 box-img-footer-box">
                 <img class="w-[4rem] h-[4rem] object-cover rounded-xl" src="cart/6.webp" alt=""/>
             </div>
             <div class="mt-[0.5rem]">
@@ -492,7 +602,7 @@
             </div>
         </div>
         <div class="text-center box-down-main cursor-pointer">
-            <div class="box-shadow--items rounded-xl p-[1rem] ease-in-out duration-300 border-borderL border-[1px] box-img-footer-box">
+            <div class="box-shadow--items-comment rounded-xl p-[1rem] ease-in-out duration-300 box-img-footer-box">
                 <img class="w-[4rem] h-[4rem] object-cover rounded-xl" src="cart/8.webp" alt=""/>
             </div>
             <div class="mt-[0.5rem]">
@@ -500,7 +610,7 @@
             </div>
         </div>
         <div class="text-center box-down-main cursor-pointer">
-            <div class="box-shadow--items rounded-xl p-[1rem] ease-in-out duration-300 border-borderL border-[1px] box-img-footer-box">
+            <div class="box-shadow--items-comment rounded-xl p-[1rem] ease-in-out duration-300 box-img-footer-box">
                 <img class="w-[4rem] h-[4rem] object-cover rounded-xl" src="cart/4.png" alt=""/>
             </div>
             <div class="mt-[0.5rem]">
@@ -508,7 +618,7 @@
             </div>
         </div>
         <div class="text-center box-down-main cursor-pointer">
-            <div class="box-shadow--items rounded-xl p-[1rem] ease-in-out duration-300 border-borderL border-[1px] box-img-footer-box">
+            <div class="box-shadow--items-comment rounded-xl p-[1rem] ease-in-out duration-300 box-img-footer-box">
                 <img class="w-[4rem] h-[4rem] object-cover rounded-xl" src="./cart/10.png" alt=""/>
             </div>
             <div class="mt-[0.5rem]">
@@ -516,7 +626,7 @@
             </div>
         </div>
         <div class="text-center box-down-main cursor-pointer">
-            <div class="box-shadow--items rounded-xl p-[1rem] ease-in-out duration-300 border-borderL border-[1px] box-img-footer-box">
+            <div class="box-shadow--items-comment rounded-xl p-[1rem] ease-in-out duration-300 box-img-footer-box">
                 <img class="w-[4rem] h-[4rem] object-cover rounded-xl" src="./cart/9.png" alt=""/>
             </div>
             <div class="mt-[0.5rem]">
@@ -524,7 +634,7 @@
             </div>
         </div>
         <div class="text-center box-down-main cursor-pointer">
-            <div class="box-shadow--items rounded-xl p-[1rem] ease-in-out duration-300 border-borderL border-[1px] box-img-footer-box">
+            <div class="box-shadow--items-comment rounded-xl p-[1rem] ease-in-out duration-300 box-img-footer-box">
                 <img class="w-[4rem] h-[4rem] object-cover rounded-xl" src="./cart/11.png" alt=""/>
             </div>
             <div class="mt-[0.5rem]">
@@ -644,7 +754,7 @@
 </div>
 
 <!-- Box Products  -->
-<section class="relative mt-[8rem] max-[700px]:p-[1rem]">
+<section class="relative mt-[6rem] max-[700px]:p-[1rem]">
     <img class="absolute top-[8rem] left-0 w-[5rem] h-[15rem] max-[1000px]:hidden" src="./product/div-box-1-106x300.png"
          alt=""/>
     <img class="absolute top-[8rem] right-0 w-[5rem] h-[15rem] max-[1000px]:hidden" src="./product/div-box-106x300.png"
@@ -697,8 +807,8 @@
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
                     <div class="text-center bg-white h-max rounded-xl border-borderL border-[1px] hover:border-brand cursor-pointer ease-in-out duration-300 pb-[1rem]">
-                        <div class="w-full h-[15rem] p-[2rem]">
-                            <img class="w-full h-full"
+                        <div class="w-full h-[13rem] p-[2rem] mt-[1rem]">
+                            <img class="w-full h-full object-cover"
                                  src="./product/27f50ddf8230cf1ff3d92349c5c3faf113efd1bb_1636443636-300x300.webp"
                                  alt=""/>
                         </div>
@@ -707,8 +817,8 @@
                                 <span class="text-sm">اسپیکر بلوتوثی قابل حمل هیوندای مدل HD S02</span>
                             </div>
                             <div class="mt-[3rem] flex flex-col gap-[1rem]">
-                                <span class="font-semibold text-brand">880,000 تومان</span>
-                                <button class="font-semibold text-brand py-[0.7rem] rounded-2xl bg-register border-registerDark border-[1px] flex justify-center items-center gap-[0.5rem] hover:bg-brand hover:text-white ease-in-out duration-300 cursor-pointer">
+                                <span class="font-semibold text-brand text-sm">880,000 تومان</span>
+                                <button class="font-semibold text-brand py-[0.7rem] rounded-2xl bg-register border-registerDark border-[1px] flex justify-center items-center gap-[0.5rem] hover:bg-brand hover:text-white ease-in-out duration-300 cursor-pointer text-sm">
                                     <span><i class="fa-solid fa-cart-shopping"></i></span>افزودن به سبد خرید
                                 </button>
                             </div>
@@ -717,8 +827,8 @@
                 </div>
                 <div class="swiper-slide">
                     <div class="text-center bg-white h-max rounded-xl border-borderL border-[1px] hover:border-brand cursor-pointer ease-in-out duration-300 pb-[1rem]">
-                        <div class="w-full h-[15rem] p-[2rem]">
-                            <img class="w-full h-full" src="./product/ksq10BmFpxUyOpYD.jpg"
+                        <div class="w-full h-[13rem] p-[2rem] mt-[1rem]">
+                            <img class="w-full h-full object-cover" src="./product/ksq10BmFpxUyOpYD.jpg"
                                  alt=""/>
                         </div>
                         <div class="mt-[1rem] px-[1rem]">
@@ -727,7 +837,7 @@
                             </div>
                             <div class="mt-[3rem] flex flex-col gap-[1rem]">
                                 <span class="font-semibold text-brand">880,000 تومان</span>
-                                <button class="font-semibold text-brand py-[0.7rem] rounded-2xl bg-register border-registerDark border-[1px] flex justify-center items-center gap-[0.5rem] hover:bg-brand hover:text-white ease-in-out duration-300 cursor-pointer">
+                                <button class="font-semibold text-brand py-[0.7rem] rounded-2xl bg-register border-registerDark border-[1px] flex justify-center items-center gap-[0.5rem] hover:bg-brand hover:text-white ease-in-out duration-300 cursor-pointer text-sm">
                                     <span><i class="fa-solid fa-cart-shopping"></i></span>افزودن به سبد خرید
                                 </button>
                             </div>
@@ -736,8 +846,9 @@
                 </div>
                 <div class="swiper-slide">
                     <div class="text-center bg-white h-max rounded-xl border-borderL border-[1px] hover:border-brand cursor-pointer ease-in-out duration-300 pb-[1rem]">
-                        <div class="w-full h-[15rem] p-[2rem]">
-                            <img class="w-full h-full" src="./product/b8018547c698416186ed8eaf26d78491-300x300.webp"
+                        <div class="w-full h-[13rem] p-[2rem] mt-[1rem]">
+                            <img class="w-full h-full object-cover"
+                                 src="./product/b8018547c698416186ed8eaf26d78491-300x300.webp"
                                  alt=""/>
                         </div>
                         <div class="mt-[1rem] px-[1rem]">
@@ -746,7 +857,7 @@
                             </div>
                             <div class="mt-[3rem] flex flex-col gap-[1rem]">
                                 <span class="font-semibold text-brand">880,000 تومان</span>
-                                <button class="font-semibold text-brand py-[0.7rem] rounded-2xl bg-register border-registerDark border-[1px] flex justify-center items-center gap-[0.5rem] hover:bg-brand hover:text-white ease-in-out duration-300 cursor-pointer">
+                                <button class="font-semibold text-brand py-[0.7rem] rounded-2xl bg-register border-registerDark border-[1px] flex justify-center items-center gap-[0.5rem] hover:bg-brand hover:text-white ease-in-out duration-300 cursor-pointer text-sm">
                                     <span><i class="fa-solid fa-cart-shopping"></i></span>افزودن به سبد خرید
                                 </button>
                             </div>
@@ -755,8 +866,9 @@
                 </div>
                 <div class="swiper-slide">
                     <div class="text-center bg-white h-max rounded-xl border-borderL border-[1px] hover:border-brand cursor-pointer ease-in-out duration-300 pb-[1rem]">
-                        <div class="w-full h-[15rem] p-[2rem]">
-                            <img class="w-full h-full" src="./product/48cd5b34e4c24663b99e05d5015b89ef-300x300.webp"
+                        <div class="w-full h-[13rem] p-[2rem] mt-[1rem]">
+                            <img class="w-full h-full object-cover"
+                                 src="./product/48cd5b34e4c24663b99e05d5015b89ef-300x300.webp"
                                  alt=""/>
                         </div>
                         <div class="mt-[1rem] px-[1rem]">
@@ -765,7 +877,7 @@
                             </div>
                             <div class="mt-[3rem] flex flex-col gap-[1rem]">
                                 <span class="font-semibold text-brand">880,000 تومان</span>
-                                <button class="font-semibold text-brand py-[0.7rem] rounded-2xl bg-register border-registerDark border-[1px] flex justify-center items-center gap-[0.5rem] hover:bg-brand hover:text-white ease-in-out duration-300 cursor-pointer">
+                                <button class="font-semibold text-brand py-[0.7rem] rounded-2xl bg-register border-registerDark border-[1px] flex justify-center items-center gap-[0.5rem] hover:bg-brand hover:text-white ease-in-out duration-300 cursor-pointer text-sm">
                                     <span><i class="fa-solid fa-cart-shopping"></i></span>افزودن به سبد خرید
                                 </button>
                             </div>
@@ -774,8 +886,8 @@
                 </div>
                 <div class="swiper-slide">
                     <div class="text-center bg-white h-max rounded-xl border-borderL border-[1px] hover:border-brand cursor-pointer ease-in-out duration-300 pb-[1rem]">
-                        <div class="w-full h-[15rem] p-[2rem]">
-                            <img class="w-full h-full" src="./product/1-min-18-300x300.jpg"
+                        <div class="w-full h-[13rem] p-[2rem] mt-[1rem]">
+                            <img class="w-full h-full object-cover" src="./product/1-min-18-300x300.jpg"
                                  alt=""/>
                         </div>
                         <div class="mt-[1rem] px-[1rem]">
@@ -784,7 +896,7 @@
                             </div>
                             <div class="mt-[3rem] flex flex-col gap-[1rem]">
                                 <span class="font-semibold text-brand">880,000 تومان</span>
-                                <button class="font-semibold text-brand py-[0.7rem] rounded-2xl bg-register border-registerDark border-[1px] flex justify-center items-center gap-[0.5rem] hover:bg-brand hover:text-white ease-in-out duration-300 cursor-pointer">
+                                <button class="font-semibold text-brand py-[0.7rem] rounded-2xl bg-register border-registerDark border-[1px] flex justify-center items-center gap-[0.5rem] hover:bg-brand hover:text-white ease-in-out duration-300 cursor-pointer text-sm">
                                     <span><i class="fa-solid fa-cart-shopping"></i></span>افزودن به سبد خرید
                                 </button>
                             </div>
@@ -796,32 +908,64 @@
     </div>
 </section>
 
-<div class="mx-auto max-w-[1390px] my-[5rem] box-products--images h-[25rem] px-[8rem] flex min-[687px]:justify-between min-[687px]:items-center  max-[1000px]:px-[4rem] max-[800px]:px-[2rem] max-[600px]:px-0 max-[687px]:flex-col">
-    <div class="max-[687px]:mt-[2rem] max-[600px]:px-[2rem]">
-        <h2 class="text-3xl text-white font-semibold max-[375px]:text-xl max-[400px]:text-[1.5rem]">پرفروش ترین هدفون ها</h2>
-        <p class="text-xl text-white font-semibold my-[0.5rem] max-[375px]:text-sm max-[400px]:text-[0.7rem]">
-            انواع هدفون و هدست در یزد موبایل
-        </p>
-        <span class="text-white">مشاهده محصولات</span>
-    </div>
-    <div class="flex min-[688px]:flex-col justify-center items-center max-[687px]:mt-[2rem]">
-        <div class="w-[15rem] h-[15rem] max-[687px]:w-[10rem] max-[687px]:h-[10rem] max-[400px]:w-[8rem] max-[400px]:h-[8rem]">
-            <img class="w-full h-full object-cover" src="./banner/1.png"/>
+<div class="mx-auto max-w-[1390px] my-[5rem] box-products--images h-[25rem] px-[8rem] flex min-[687px]:justify-between min-[687px]:items-center  max-[1000px]:px-[4rem] max-[800px]:px-[2rem] max-[600px]:px-0 max-[687px]:flex-col w-full">
+
+    <div class="relative w-[344px] mx-auto rounded-3xl overflow-hidden bg-orange-500 w-full min-[610px]:hidden">
+        <!-- بک‌گراند تصویری -->
+        <img src="./assets/Group-10897.png" alt="Orange Background"
+             class="absolute inset-0 w-full h-full object-cover z-0" />
+
+        <!-- لایه محتوا -->
+        <div class="relative z-10 flex flex-col items-center text-center py-6 px-4 text-white">
+
+            <!-- عنوان -->
+            <h2 class="text-xl font-extrabold mb-2">پرفروش‌ترین هدفون‌ها</h2>
+
+            <!-- زیرعنوان -->
+            <p class="text-sm leading-6 mb-4">
+                انواع <span class="font-bold">هدفون، هندزفری</span> و <span class="font-bold">هندزفری بلوتوثی</span> در موبایل‌ یزد
+            </p>
+
+            <!-- دکمه -->
+            <a href="#"
+               class="bg-white text-orange-600 text-sm font-semibold px-4 py-1.5 rounded-full shadow-md hover:bg-orange-50 transition">
+                مشاهده محصولات
+            </a>
+
+            <!-- تصویر هدفون وسط -->
+            <img src="./banner/1.png" alt="Headphones"
+                 class="w-[200px] h-auto mt-6 pointer-events-none select-none" />
         </div>
-        <div class="relative flex justify-center items-center max-[688px]:mr-[4rem]">
-            <button class="absolute top-[1.3rem] left-[-1.5rem] cursor-pointer text-white max-[678px]:hidden">
-                <ion-icon name="chevron-forward-outline"></ion-icon>
-            </button>
-            <button class="absolute top-[1.3rem] right-[-1.5rem] cursor-pointer text-white max-[678px]:hidden">
-                <ion-icon name="chevron-back-outline"></ion-icon>
-            </button>
-            <div class="flex items-center max-[688px]:flex-col gap-[1rem]">
-                <img class="w-[4rem] h-[4rem] object-cover max-[678px]:w-[3rem] max-[678px]:h-[3rem] cursor-pointer"
-                     src="./assets/1-BO24tAdF.png"/>
-                <img class="w-[3rem] h-[4rem] object-cover img-banner max-[678px]:w-[3rem] max-[678px]:h-[3rem] cursor-pointer"
-                     src="./assets/3-BLAfopU-.png"/>
-                <img class="w-[1.5rem] h-[4rem] object-cover img-banner max-[678px]:w-[1.2rem] max-[678px]:h-[3rem] cursor-pointer max-[500px]:w-[1.2rem]"
-                     src="./assets/2-C33tHLlG.png"/>
+    </div>
+
+    <div class="max-[610px]:hidden mx-auto max-w-[1390px] my-[5rem] box-products--images flex min-[687px]:justify-between min-[687px]:items-center w-full">
+        <div class="max-[687px]:mt-[2rem] max-[600px]:px-[2rem]">
+            <h2 class="text-4xl text-white font-bold max-[375px]:text-xl max-[400px]:text-[1.5rem] max-[815px]:text-2xl">پرفروش ترین هدفون
+                ها</h2>
+            <p class="text-2xl text-white font-semibold my-[0.5rem] max-[375px]:text-sm max-[400px]:text-[0.7rem]">
+                انواع هدفون و هدست در یزد موبایل
+            </p>
+            <span class="text-white">مشاهده محصولات<span><ion-icon name="chevron-forward-outline"></ion-icon></span></span>
+        </div>
+        <div class="flex min-[688px]:flex-col justify-center items-center max-[687px]:mt-[2rem]">
+            <div class="w-[20rem] h-[15rem] max-[687px]:w-[10rem] max-[687px]:h-[10rem] max-[400px]:w-[8rem] max-[400px]:h-[8rem]">
+                <img class="w-full h-full object-cover" src="./banner/1.png"/>
+            </div>
+            <div class="relative flex justify-center items-center max-[688px]:mr-[4rem] mt-[1rem]">
+                <button class="absolute top-[1.3rem] left-[-1.5rem] cursor-pointer text-white max-[678px]:hidden">
+                    <ion-icon name="chevron-forward-outline"></ion-icon>
+                </button>
+                <button class="absolute top-[1.3rem] right-[-1.5rem] cursor-pointer text-white max-[678px]:hidden">
+                    <ion-icon name="chevron-back-outline"></ion-icon>
+                </button>
+                <div class="flex items-center max-[688px]:flex-col gap-[2rem]">
+                    <img class="w-[4rem] h-[4rem] object-cover max-[678px]:w-[3rem] max-[678px]:h-[3rem] cursor-pointer"
+                         src="./assets/1-BO24tAdF.png"/>
+                    <img class="w-[3rem] h-[4rem] object-cover img-banner max-[678px]:w-[3rem] max-[678px]:h-[3rem] cursor-pointer"
+                         src="./assets/3-BLAfopU-.png"/>
+                    <img class="w-[1.5rem] h-[4rem] object-cover img-banner max-[678px]:w-[1.2rem] max-[678px]:h-[3rem] cursor-pointer max-[500px]:w-[1.2rem]"
+                         src="./assets/2-C33tHLlG.png"/>
+                </div>
             </div>
         </div>
     </div>
@@ -852,8 +996,8 @@
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
                     <div class="text-center w-full bg-white h-max box-shadow--items rounded-xl pb-[1rem] hover:border-brand border-borderL border-[1px] ease-in-out duration-300 hover:scale-y-105">
-                        <div class="w-full h-[15rem] p-[2rem] relative">
-                            <img class="w-full h-full"
+                        <div class="w-full h-[13rem] p-[2rem] relative">
+                            <img class="w-full h-full object-cover"
                                  src="./product/7dc1e04579a34da4b2f46e94a3337ac3b3e7a9c2_1669205150.webp"
                                  alt=""/>
                             <div class="absolute top-[0.5rem] left-[0.5rem]">
@@ -882,8 +1026,8 @@
                 </div>
                 <div class="swiper-slide">
                     <div class="text-center w-full bg-white h-max box-shadow--items rounded-xl pb-[1rem] hover:border-brand border-borderL border-[1px] ease-in-out duration-300 hover:scale-y-105">
-                        <div class="w-full h-[15rem] p-[2rem] relative">
-                            <img class="w-full h-full" src="./product/ySUwaMO9yXN61y0X.jpg"
+                        <div class="w-full h-[13rem] p-[2rem] relative">
+                            <img class="w-full h-full object-cover" src="./product/ySUwaMO9yXN61y0X.jpg"
                                  alt=""/>
                             <div class="absolute top-[0.5rem] left-[0.5rem]">
                                 <span class="p-[0.2rem] text-[0.7rem] text-white rounded-md back-linearGradiant">فروش ویژه!</span>
@@ -911,8 +1055,8 @@
                 </div>
                 <div class="swiper-slide">
                     <div class="text-center w-full bg-white h-max box-shadow--items rounded-xl pb-[1rem] hover:border-brand border-borderL border-[1px] ease-in-out duration-300 hover:scale-y-105">
-                        <div class="w-full h-[15rem] p-[2rem] relative">
-                            <img class="w-full h-full" src="./cart/7.jpg"
+                        <div class="w-full h-[13rem] p-[2rem] relative">
+                            <img class="w-full h-full object-cover" src="./cart/7.jpg"
                                  alt=""/>
                             <div class="absolute top-[0.5rem] left-[0.5rem]">
                                 <span class="p-[0.2rem] text-[0.7rem] text-white rounded-md back-linearGradiant">فروش ویژه!</span>
@@ -940,8 +1084,8 @@
                 </div>
                 <div class="swiper-slide">
                     <div class="text-center w-full bg-white h-max box-shadow--items rounded-xl pb-[1rem] hover:border-brand border-borderL border-[1px] ease-in-out duration-300 hover:scale-y-105">
-                        <div class="w-full h-[15rem] p-[2rem] relative">
-                            <img class="w-full h-full"
+                        <div class="w-full h-[13rem] p-[2rem] relative">
+                            <img class="w-full h-full object-cover"
                                  src="./product/Yesido-CA-18-1.2m-2.4A-Lightning-Cable-22-300x300.jpg"
                                  alt=""/>
                             <div class="absolute top-[0.5rem] left-[0.5rem]">
@@ -970,8 +1114,8 @@
                 </div>
                 <div class="swiper-slide">
                     <div class="text-center w-full bg-white h-max box-shadow--items rounded-xl pb-[1rem] hover:border-brand border-borderL border-[1px] ease-in-out duration-300 hover:scale-y-105">
-                        <div class="w-full h-[15rem] p-[2rem] relative">
-                            <img class="w-full h-full" src="./product/ksq10BmFpxUyOpYD.jpg"
+                        <div class="w-full h-[13rem] p-[2rem] relative">
+                            <img class="w-full h-full object-cover" src="./product/ksq10BmFpxUyOpYD.jpg"
                                  alt=""/>
                             <div class="absolute top-[0.5rem] left-[0.5rem]">
                                 <span class="p-[0.2rem] text-[0.7rem] text-white rounded-md back-linearGradiant">فروش ویژه!</span>
@@ -999,8 +1143,9 @@
                 </div>
                 <div class="swiper-slide">
                     <div class="text-center w-full bg-white h-max box-shadow--items rounded-xl pb-[1rem] hover:border-brand border-borderL border-[1px] ease-in-out duration-300 hover:scale-y-105">
-                        <div class="w-full h-[15rem] p-[2rem] relative">
-                            <img class="w-full h-full" src="./product/img-2025-01-09-677f8aa3c4cfa-300x300.jpg"
+                        <div class="w-full h-[13rem] p-[2rem] relative">
+                            <img class="w-full h-full object-cover"
+                                 src="./product/img-2025-01-09-677f8aa3c4cfa-300x300.jpg"
                                  alt=""/>
                             <div class="absolute top-[0.5rem] left-[0.5rem]">
                                 <span class="p-[0.2rem] text-[0.7rem] text-white rounded-md back-linearGradiant">فروش ویژه!</span>
@@ -1028,8 +1173,9 @@
                 </div>
                 <div class="swiper-slide">
                     <div class="text-center w-full bg-white h-max box-shadow--items rounded-xl pb-[1rem] hover:border-brand border-borderL border-[1px] ease-in-out duration-300 hover:scale-y-105">
-                        <div class="w-full h-[15rem] p-[2rem] relative">
-                            <img class="w-full h-full" src="./product/هندزفری-سیم-دار-بیوا-مدل-biva-hf-04-2.jpg"
+                        <div class="w-full h-[13rem] p-[2rem] relative">
+                            <img class="w-full h-full object-cover"
+                                 src="./product/هندزفری-سیم-دار-بیوا-مدل-biva-hf-04-2.jpg"
                                  alt=""/>
                             <div class="absolute top-[0.5rem] left-[0.5rem]">
                                 <span class="p-[0.2rem] text-[0.7rem] text-white rounded-md back-linearGradiant">فروش ویژه!</span>
@@ -1057,8 +1203,8 @@
                 </div>
                 <div class="swiper-slide">
                     <div class="text-center w-full bg-white h-max box-shadow--items rounded-xl pb-[1rem] hover:border-brand border-borderL border-[1px] ease-in-out duration-300 hover:scale-y-105">
-                        <div class="w-full h-[15rem] p-[2rem] relative">
-                            <img class="w-full h-full" src="./product/Biva-C-10T-3-scaled.jpg-1.webp"
+                        <div class="w-full h-[13rem] p-[2rem] relative">
+                            <img class="w-full h-full object-cover" src="./product/Biva-C-10T-3-scaled.jpg-1.webp"
                                  alt=""/>
                             <div class="absolute top-[0.5rem] left-[0.5rem]">
                                 <span class="p-[0.2rem] text-[0.7rem] text-white rounded-md back-linearGradiant">فروش ویژه!</span>
@@ -1086,8 +1232,8 @@
                 </div>
                 <div class="swiper-slide">
                     <div class="text-center w-full bg-white h-max box-shadow--items rounded-xl pb-[1rem] hover:border-brand border-borderL border-[1px] ease-in-out duration-300 hover:scale-y-105">
-                        <div class="w-full h-[15rem] p-[2rem] relative">
-                            <img class="w-full h-full"
+                        <div class="w-full h-[13rem] p-[2rem] relative">
+                            <img class="w-full h-full object-cover"
                                  src="./product/Buy-Price-Biva-C-03V-Micro-USB-Data-And-Charging-Cable-1-2m-2-4A-00-300x300.jpg"
                                  alt=""/>
                             <div class="absolute top-[0.5rem] left-[0.5rem]">
@@ -1116,8 +1262,8 @@
                 </div>
                 <div class="swiper-slide">
                     <div class="text-center w-full bg-white h-max box-shadow--items rounded-xl pb-[1rem] hover:border-brand border-borderL border-[1px] ease-in-out duration-300 hover:scale-y-105">
-                        <div class="w-full h-[15rem] p-[2rem] relative">
-                            <img class="w-full h-full"
+                        <div class="w-full h-[13rem] p-[2rem] relative">
+                            <img class="w-full h-full object-cover"
                                  src="./product/f09ab3054800bff7037187e5a833563f2148ea49_1682278421.webp"
                                  alt=""/>
                             <div class="absolute top-[0.5rem] left-[0.5rem]">
@@ -1212,12 +1358,12 @@
             </div>
         </div>
 
-        <div class="mt-[4rem] h-[52rem] cursor-pointer">
+        <div class="mt-[4rem] h-[49rem] cursor-pointer">
             <div class="swiper mySwiper6">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
                         <div class="text-center w-full bg-white h-max box-shadow--items rounded-xl pb-[1rem] hover:border-brand border-borderL border-[1px] ease-in-out duration-300 hover:scale-y-105">
-                            <div class="w-full h-[15rem] p-[2rem] relative">
+                            <div class="w-full h-[13rem] p-[2rem] relative">
                                 <img class="w-full h-full"
                                      src="./product/7dc1e04579a34da4b2f46e94a3337ac3b3e7a9c2_1669205150.webp"
                                      alt=""/>
@@ -1247,7 +1393,7 @@
                     </div>
                     <div class="swiper-slide">
                         <div class="text-center w-full bg-white h-max box-shadow--items rounded-xl pb-[1rem] hover:border-brand border-borderL border-[1px] ease-in-out duration-300 hover:scale-y-105">
-                            <div class="w-full h-[15rem] p-[2rem] relative">
+                            <div class="w-full h-[13rem] p-[2rem] relative">
                                 <img class="w-full h-full" src="./product/ySUwaMO9yXN61y0X.jpg"
                                      alt=""/>
                                 <div class="absolute top-[0.5rem] left-[0.5rem]">
@@ -1276,7 +1422,7 @@
                     </div>
                     <div class="swiper-slide">
                         <div class="text-center w-full bg-white h-max box-shadow--items rounded-xl pb-[1rem] hover:border-brand border-borderL border-[1px] ease-in-out duration-300 hover:scale-y-105">
-                            <div class="w-full h-[15rem] p-[2rem] relative">
+                            <div class="w-full h-[13rem] p-[2rem] relative">
                                 <img class="w-full h-full" src="./cart/7.jpg"
                                      alt=""/>
                                 <div class="absolute top-[0.5rem] left-[0.5rem]">
@@ -1305,7 +1451,7 @@
                     </div>
                     <div class="swiper-slide">
                         <div class="text-center w-full bg-white h-max box-shadow--items rounded-xl pb-[1rem] hover:border-brand border-borderL border-[1px] ease-in-out duration-300 hover:scale-y-105">
-                            <div class="w-full h-[15rem] p-[2rem] relative">
+                            <div class="w-full h-[13rem] p-[2rem] relative">
                                 <img class="w-full h-full"
                                      src="./product/Yesido-CA-18-1.2m-2.4A-Lightning-Cable-22-300x300.jpg"
                                      alt=""/>
@@ -1335,7 +1481,7 @@
                     </div>
                     <div class="swiper-slide">
                         <div class="text-center w-full bg-white h-max box-shadow--items rounded-xl pb-[1rem] hover:border-brand border-borderL border-[1px] ease-in-out duration-300 hover:scale-y-105">
-                            <div class="w-full h-[15rem] p-[2rem] relative">
+                            <div class="w-full h-[13rem] p-[2rem] relative">
                                 <img class="w-full h-full" src="./product/ksq10BmFpxUyOpYD.jpg"
                                      alt=""/>
                                 <div class="absolute top-[0.5rem] left-[0.5rem]">
@@ -1364,7 +1510,7 @@
                     </div>
                     <div class="swiper-slide">
                         <div class="text-center w-full bg-white h-max box-shadow--items rounded-xl pb-[1rem] hover:border-brand border-borderL border-[1px] ease-in-out duration-300 hover:scale-y-105">
-                            <div class="w-full h-[15rem] p-[2rem] relative">
+                            <div class="w-full h-[13rem] p-[2rem] relative">
                                 <img class="w-full h-full" src="./product/img-2025-01-09-677f8aa3c4cfa-300x300.jpg"
                                      alt=""/>
                                 <div class="absolute top-[0.5rem] left-[0.5rem]">
@@ -1393,7 +1539,7 @@
                     </div>
                     <div class="swiper-slide">
                         <div class="text-center w-full bg-white h-max box-shadow--items rounded-xl pb-[1rem] hover:border-brand border-borderL border-[1px] ease-in-out duration-300 hover:scale-y-105">
-                            <div class="w-full h-[15rem] p-[2rem] relative">
+                            <div class="w-full h-[13rem] p-[2rem] relative">
                                 <img class="w-full h-full" src="./product/هندزفری-سیم-دار-بیوا-مدل-biva-hf-04-2.jpg"
                                      alt=""/>
                                 <div class="absolute top-[0.5rem] left-[0.5rem]">
@@ -1422,7 +1568,7 @@
                     </div>
                     <div class="swiper-slide">
                         <div class="text-center w-full bg-white h-max box-shadow--items rounded-xl pb-[1rem] hover:border-brand border-borderL border-[1px] ease-in-out duration-300 hover:scale-y-105">
-                            <div class="w-full h-[15rem] p-[2rem] relative">
+                            <div class="w-full h-[13rem] p-[2rem] relative">
                                 <img class="w-full h-full" src="./product/Biva-C-10T-3-scaled.jpg-1.webp"
                                      alt=""/>
                                 <div class="absolute top-[0.5rem] left-[0.5rem]">
@@ -1451,7 +1597,7 @@
                     </div>
                     <div class="swiper-slide">
                         <div class="text-center w-full bg-white h-max box-shadow--items rounded-xl pb-[1rem] hover:border-brand border-borderL border-[1px] ease-in-out duration-300 hover:scale-y-105">
-                            <div class="w-full h-[15rem] p-[2rem] relative">
+                            <div class="w-full h-[13rem] p-[2rem] relative">
                                 <img class="w-full h-full"
                                      src="./product/Buy-Price-Biva-C-03V-Micro-USB-Data-And-Charging-Cable-1-2m-2-4A-00-300x300.jpg"
                                      alt=""/>
@@ -1481,7 +1627,7 @@
                     </div>
                     <div class="swiper-slide">
                         <div class="text-center w-full bg-white h-max box-shadow--items rounded-xl pb-[1rem] hover:border-brand border-borderL border-[1px] ease-in-out duration-300 hover:scale-y-105">
-                            <div class="w-full h-[15rem] p-[2rem] relative">
+                            <div class="w-full h-[13rem] p-[2rem] relative">
                                 <img class="w-full h-full"
                                      src="./product/f09ab3054800bff7037187e5a833563f2148ea49_1682278421.webp"
                                      alt=""/>
@@ -1511,7 +1657,7 @@
                     </div>
                     <div class="swiper-slide">
                         <div class="text-center w-full bg-white h-max box-shadow--items rounded-xl pb-[1rem] hover:border-brand border-borderL border-[1px] ease-in-out duration-300 hover:scale-y-105">
-                            <div class="w-full h-[15rem] p-[2rem] relative">
+                            <div class="w-full h-[13rem] p-[2rem] relative">
                                 <img class="w-full h-full"
                                      src="./product/7dc1e04579a34da4b2f46e94a3337ac3b3e7a9c2_1669205150.webp"
                                      alt=""/>
@@ -1541,7 +1687,7 @@
                     </div>
                     <div class="swiper-slide">
                         <div class="text-center w-full bg-white h-max box-shadow--items rounded-xl pb-[1rem] hover:border-brand border-borderL border-[1px] ease-in-out duration-300 hover:scale-y-105">
-                            <div class="w-full h-[15rem] p-[2rem] relative">
+                            <div class="w-full h-[13rem] p-[2rem] relative">
                                 <img class="w-full h-full" src="./product/ySUwaMO9yXN61y0X.jpg"
                                      alt=""/>
                                 <div class="absolute top-[0.5rem] left-[0.5rem]">
@@ -1570,7 +1716,7 @@
                     </div>
                     <div class="swiper-slide">
                         <div class="text-center w-full bg-white h-max box-shadow--items rounded-xl pb-[1rem] hover:border-brand border-borderL border-[1px] ease-in-out duration-300 hover:scale-y-105">
-                            <div class="w-full h-[15rem] p-[2rem] relative">
+                            <div class="w-full h-[13rem] p-[2rem] relative">
                                 <img class="w-full h-full" src="./cart/7.jpg"
                                      alt=""/>
                                 <div class="absolute top-[0.5rem] left-[0.5rem]">
@@ -1599,7 +1745,7 @@
                     </div>
                     <div class="swiper-slide">
                         <div class="text-center w-full bg-white h-max box-shadow--items rounded-xl pb-[1rem] hover:border-brand border-borderL border-[1px] ease-in-out duration-300 hover:scale-y-105">
-                            <div class="w-full h-[15rem] p-[2rem] relative">
+                            <div class="w-full h-[13rem] p-[2rem] relative">
                                 <img class="w-full h-full"
                                      src="./product/Yesido-CA-18-1.2m-2.4A-Lightning-Cable-22-300x300.jpg"
                                      alt=""/>
@@ -1629,7 +1775,7 @@
                     </div>
                     <div class="swiper-slide">
                         <div class="text-center w-full bg-white h-max box-shadow--items rounded-xl pb-[1rem] hover:border-brand border-borderL border-[1px] ease-in-out duration-300 hover:scale-y-105">
-                            <div class="w-full h-[15rem] p-[2rem] relative">
+                            <div class="w-full h-[13rem] p-[2rem] relative">
                                 <img class="w-full h-full" src="./product/ksq10BmFpxUyOpYD.jpg"
                                      alt=""/>
                                 <div class="absolute top-[0.5rem] left-[0.5rem]">
@@ -1658,7 +1804,7 @@
                     </div>
                     <div class="swiper-slide">
                         <div class="text-center w-full bg-white h-max box-shadow--items rounded-xl pb-[1rem] hover:border-brand border-borderL border-[1px] ease-in-out duration-300 hover:scale-y-105">
-                            <div class="w-full h-[15rem] p-[2rem] relative">
+                            <div class="w-full h-[13rem] p-[2rem] relative">
                                 <img class="w-full h-full" src="./product/img-2025-01-09-677f8aa3c4cfa-300x300.jpg"
                                      alt=""/>
                                 <div class="absolute top-[0.5rem] left-[0.5rem]">
@@ -1687,7 +1833,7 @@
                     </div>
                     <div class="swiper-slide">
                         <div class="text-center w-full bg-white h-max box-shadow--items rounded-xl pb-[1rem] hover:border-brand border-borderL border-[1px] ease-in-out duration-300 hover:scale-y-105">
-                            <div class="w-full h-[15rem] p-[2rem] relative">
+                            <div class="w-full h-[13rem] p-[2rem] relative">
                                 <img class="w-full h-full" src="./product/هندزفری-سیم-دار-بیوا-مدل-biva-hf-04-2.jpg"
                                      alt=""/>
                                 <div class="absolute top-[0.5rem] left-[0.5rem]">
@@ -1716,7 +1862,7 @@
                     </div>
                     <div class="swiper-slide">
                         <div class="text-center w-full bg-white h-max box-shadow--items rounded-xl pb-[1rem] hover:border-brand border-borderL border-[1px] ease-in-out duration-300 hover:scale-y-105">
-                            <div class="w-full h-[15rem] p-[2rem] relative">
+                            <div class="w-full h-[13rem] p-[2rem] relative">
                                 <img class="w-full h-full" src="./product/Biva-C-10T-3-scaled.jpg-1.webp"
                                      alt=""/>
                                 <div class="absolute top-[0.5rem] left-[0.5rem]">
@@ -1745,7 +1891,7 @@
                     </div>
                     <div class="swiper-slide">
                         <div class="text-center w-full bg-white h-max box-shadow--items rounded-xl pb-[1rem] hover:border-brand border-borderL border-[1px] ease-in-out duration-300 hover:scale-y-105">
-                            <div class="w-full h-[15rem] p-[2rem] relative">
+                            <div class="w-full h-[13rem] p-[2rem] relative">
                                 <img class="w-full h-full"
                                      src="./product/Buy-Price-Biva-C-03V-Micro-USB-Data-And-Charging-Cable-1-2m-2-4A-00-300x300.jpg"
                                      alt=""/>
@@ -1775,7 +1921,7 @@
                     </div>
                     <div class="swiper-slide">
                         <div class="text-center w-full bg-white h-max box-shadow--items rounded-xl pb-[1rem] hover:border-brand border-borderL border-[1px] ease-in-out duration-300 hover:scale-y-105">
-                            <div class="w-full h-[15rem] p-[2rem] relative">
+                            <div class="w-full h-[13rem] p-[2rem] relative">
                                 <img class="w-full h-full"
                                      src="./product/f09ab3054800bff7037187e5a833563f2148ea49_1682278421.webp"
                                      alt=""/>
@@ -1830,6 +1976,42 @@
                     <div class="w-[5rem] h-[5rem]">
                         <img class="w-full h-full"
                              src="./product/7dc1e04579a34da4b2f46e94a3337ac3b3e7a9c2_1669205150.webp"
+                             alt=""/>
+                    </div>
+                    <span class="text-brand text-2xl font-semibold">3</span>
+                </div>
+                <div class="flex flex-col p-[0.5rem]">
+                    <div>
+                        <span class="text-sm">اسپیکر بلوتوثی قابل حمل هیوندای مدل HD S02</span>
+                    </div>
+                    <div class="flex justify-end">
+                        <span class="font-semibold text-brand">880,000 تومان</span>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-white h-max box-shadow--items rounded-xl flex">
+                <div class="flex items-center">
+                    <div class="w-[5rem] h-[5rem]">
+                        <img class="w-full h-full"
+                             src="./product/310b1eb23a217d32fb64d06eafd0d50e8b38164e_1631357509-1-300x300.webp"
+                             alt=""/>
+                    </div>
+                    <span class="text-brand text-2xl font-semibold">3</span>
+                </div>
+                <div class="flex flex-col p-[0.5rem]">
+                    <div>
+                        <span class="text-sm">اسپیکر بلوتوثی قابل حمل هیوندای مدل HD S02</span>
+                    </div>
+                    <div class="flex justify-end">
+                        <span class="font-semibold text-brand">880,000 تومان</span>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-white h-max box-shadow--items rounded-xl flex">
+                <div class="flex items-center">
+                    <div class="w-[5rem] h-[5rem]">
+                        <img class="w-full h-full"
+                             src="./product/buy-price-Joyroom-S-L352-SU-Lightning-1A-Cable-1m007-300x300.jpg"
                              alt=""/>
                     </div>
                     <span class="text-brand text-2xl font-semibold">3</span>
@@ -2230,10 +2412,10 @@
 
         <div class="flex mt-[2rem]">
             <!-- Swiper -->
-            <div class="swiper mySwiper-comment cursor-pointer">
+            <div class="swiper mySwiper-comment cursor-pointer" style="padding: 1rem;">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
-                        <div class="text-right py-[1.5rem] px-[1rem] h-[15rem] rounded-2xl border-[1px] border-borderL hover:border-brand ease-in-out duration-300">
+                        <div class="text-right py-[1.5rem] px-[1rem] h-[15rem] rounded-2xl box-shadow--items-comment hover:border-brand ease-in-out duration-300">
                             <div class="flex items-center gap-[1rem]">
                                 <div class="w-[1.5rem] h-[1.5rem] rounded-full bg-registerDark flex justify-center items-center">
                                     <div class="w-[1rem] h-[1rem] rounded-full bg-register flex justify-center items-center">
@@ -2255,7 +2437,7 @@
                         </div>
                     </div>
                     <div class="swiper-slide">
-                        <div class="text-right py-[1.5rem] px-[1rem] h-[15rem] rounded-2xl border-[1px] border-borderL hover:border-brand ease-in-out duration-300">
+                        <div class="text-right py-[1.5rem] px-[1rem] h-[15rem] rounded-2xl box-shadow--items-comment hover:border-brand ease-in-out duration-300">
                             <div class="flex items-center gap-[1rem]">
                                 <div class="w-[1.5rem] h-[1.5rem] rounded-full bg-registerDark flex justify-center items-center">
                                     <div class="w-[1rem] h-[1rem] rounded-full bg-register flex justify-center items-center">
@@ -2277,7 +2459,7 @@
                         </div>
                     </div>
                     <div class="swiper-slide">
-                        <div class="text-right py-[1.5rem] px-[1rem] h-[15rem] rounded-2xl border-[1px] border-borderL hover:border-brand ease-in-out duration-300">
+                        <div class="text-right py-[1.5rem] px-[1rem] h-[15rem] rounded-2xl box-shadow--items-comment hover:border-brand ease-in-out duration-300">
                             <div class="flex items-center gap-[1rem]">
                                 <div class="w-[1.5rem] h-[1.5rem] rounded-full bg-registerDark flex justify-center items-center">
                                     <div class="w-[1rem] h-[1rem] rounded-full bg-register flex justify-center items-center">
@@ -2299,7 +2481,7 @@
                         </div>
                     </div>
                     <div class="swiper-slide">
-                        <div class="text-right p-[1.5rem] px-[1rem] h-[15rem] rounded-2xl border-[1px] border-borderL hover:border-brand ease-in-out duration-300">
+                        <div class="text-right py-[1.5rem] px-[1rem] h-[15rem] rounded-2xl box-shadow--items-comment hover:border-brand ease-in-out duration-300">
                             <div class="flex items-center gap-[1rem]">
                                 <div class="w-[1.5rem] h-[1.5rem] rounded-full bg-registerDark flex justify-center items-center">
                                     <div class="w-[1rem] h-[1rem] rounded-full bg-register flex justify-center items-center">
@@ -2337,11 +2519,11 @@
 
         <div class="flex mt-[3rem]">
             <!-- Swiper -->
-            <div class="swiper mySwiper-blog">
+            <div class="swiper mySwiper-blog" style="padding: 1rem">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide swiper-slide--large">
-                        <div class="text-right py-[2rem] px-[1.5rem] h-[28.2rem] rounded-2xl border-[1px] border-borderL flex gap-[2rem] hover:border-brand ease-in-out duration-300 box-img-blog cursor-pointer">
-                            <div class="h-full w-[85rem] rounded-2xl relative">
+                        <div class="text-right py-[2rem] px-[1.5rem] hover:border-brand h-[26.1rem] box-shadow--items-comment rounded-2xl flex gap-[2rem] hover:border-brand ease-in-out duration-300 box-img-blog cursor-pointer">
+                            <div class="h-full w-[75rem] rounded-2xl relative">
                                 <img class="w-full h-full object-cover rounded-2xl"
                                      src="./assets/8c37a9049003ae06e3236fabd12b3796a56bc72e-3000x1540-NnhMTmlC.png"
                                      alt=""/>
@@ -2366,8 +2548,8 @@
                         </div>
                     </div>
                     <div class="swiper-slide">
-                        <div class="text-right p-[1.5rem] rounded-2xl border-[1px] border-borderL cursor-pointer hover:border-brand ease-in-out duration-300 box-img-blog">
-                            <div class="h-[12rem] w-full rounded-2xl relative">
+                        <div class="text-right p-[1.5rem] rounded-2xl box-shadow--items-comment cursor-pointer hover:border-brand ease-in-out duration-300 box-img-blog">
+                            <div class="h-[10rem] w-full rounded-2xl relative">
                                 <img class="w-full h-full object-cover rounded-2xl" src="./assets/blogimg-BrwcxsJ7.png"
                                      alt=""/>
 
@@ -2393,8 +2575,8 @@
                         </div>
                     </div>
                     <div class="swiper-slide">
-                        <div class="text-right p-[1.5rem] rounded-2xl border-[1px] border-borderL cursor-pointer hover:border-brand box-img-blog">
-                            <div class="h-[12rem] w-full rounded-2xl relative">
+                        <div class="text-right p-[1.5rem] rounded-2xl box-shadow--items-comment cursor-pointer hover:border-brand box-img-blog">
+                            <div class="h-[10rem] w-full rounded-2xl relative">
                                 <img class="w-full h-full object-cover rounded-2xl"
                                      src="./assets/Smartphone-Xiaomi-Poco-M6-Pro-Dual-Sim-De-256gb-8GB-Ram-De-6-67-64-8-2mp-8mp-Roxo-global-_1750681788-Co2u1qlc.webp"
                                      alt=""/>
@@ -2421,8 +2603,8 @@
                         </div>
                     </div>
                     <div class="swiper-slide">
-                        <div class="text-right p-[1.5rem] rounded-2xl border-[1px] border-borderL cursor-pointer hover:border-brand box-img-blog">
-                            <div class="h-[12rem] w-full rounded-2xl relative">
+                        <div class="text-right p-[1.5rem] rounded-2xl box-shadow--items-comment cursor-pointer hover:border-brand box-img-blog">
+                            <div class="h-[10rem] w-full rounded-2xl relative">
                                 <img class="w-full h-full object-cover rounded-2xl" src="./assets/blogimg-BrwcxsJ7.png"
                                      alt=""/>
 
@@ -2448,8 +2630,8 @@
                         </div>
                     </div>
                     <div class="swiper-slide">
-                        <div class="text-right p-[1.5rem] rounded-2xl border-[1px] border-borderL cursor-pointer hover:border-brand box-img-blog">
-                            <div class="h-[12rem] w-full rounded-2xl relative">
+                        <div class="text-right p-[1.5rem] rounded-2xl cursor-pointer box-shadow--items-comment hover:border-brand box-img-blog">
+                            <div class="h-[10rem] w-full rounded-2xl relative">
                                 <img class="w-full h-full object-cover rounded-2xl" src="./assets/blogimg-BrwcxsJ7.png"
                                      alt=""/>
 
@@ -2757,61 +2939,51 @@
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
                     <button class="max-[800px]:w-full px-[1rem] py-[0.5rem] text-[0.8rem] rounded-3xl border-borderL border-[1px] box-shadow--items--box flex items-center gap-[0.5rem] cursor-pointer hover:bg-register hover:text-brand ease-in-out duration-300 hover:border-brand">
-                        <div class="w-[1rem] h-[1rem] rounded-full bg-borderL"></div>
                         <span class="font-semibold">#</span>هدفون بلوتوثی
                     </button>
                 </div>
                 <div class="swiper-slide">
                     <button class="max-[800px]:w-full px-[1rem] py-[0.5rem] text-[0.8rem] rounded-3xl border-borderL border-[1px] box-shadow--items--box flex items-center gap-[0.5rem] cursor-pointer hover:bg-register hover:text-brand ease-in-out duration-300 hover:border-brand">
-                        <div class="w-[1rem] h-[1rem] rounded-full bg-borderL"></div>
                         <span class="font-semibold">#</span>آیفون 13 پرومکس
                     </button>
                 </div>
                 <div class="swiper-slide">
                     <button class="max-[800px]:w-full px-[1rem] py-[0.5rem] text-[0.8rem] rounded-3xl border-borderL border-[1px] box-shadow--items--box flex items-center gap-[0.5rem] cursor-pointer hover:bg-register hover:text-brand ease-in-out duration-300 hover:border-brand">
-                        <div class="w-[1rem] h-[1rem] rounded-full bg-borderL"></div>
                         <span class="font-semibold">#</span>کارت گرافیک MSI
                     </button>
                 </div>
                 <div class="swiper-slide">
                     <button class="max-[800px]:w-full px-[1rem] py-[0.5rem] text-[0.8rem] rounded-3xl border-borderL border-[1px] box-shadow--items--box flex items-center gap-[0.5rem] cursor-pointer hover:bg-register hover:text-brand ease-in-out duration-300 hover:border-brand">
-                        <div class="w-[1rem] h-[1rem] rounded-full bg-borderL"></div>
                         <span class="font-semibold">#</span>اسپیکر قابل حمل
                     </button>
                 </div>
                 <div class="swiper-slide">
                     <button class="max-[800px]:w-full px-[1rem] py-[0.5rem] text-[0.8rem] rounded-3xl border-borderL border-[1px] box-shadow--items--box flex items-center gap-[0.5rem] cursor-pointer hover:bg-register hover:text-brand ease-in-out duration-300 hover:border-brand">
-                        <div class="w-[1rem] h-[1rem] rounded-full bg-borderL"></div>
                         <span class="font-semibold">#</span>لپتاپ گیمینگ ایسوس
                     </button>
                 </div>
                 <div class="swiper-slide">
                     <button class="max-[800px]:w-full px-[1rem] py-[0.5rem] text-[0.8rem] rounded-3xl border-borderL border-[1px] box-shadow--items--box flex items-center gap-[0.5rem] cursor-pointer hover:bg-register hover:text-brand ease-in-out duration-300 hover:border-brand">
-                        <div class="w-[1rem] h-[1rem] rounded-full bg-borderL"></div>
                         <span class="font-semibold">#</span>کفش ورزشی آدیداس
                     </button>
                 </div>
                 <div class="swiper-slide">
                     <button class="max-[800px]:w-full px-[1rem] py-[0.5rem] text-[0.8rem] rounded-3xl border-borderL border-[1px] box-shadow--items--box flex items-center gap-[0.5rem] cursor-pointer hover:bg-register hover:text-brand ease-in-out duration-300 hover:border-brand">
-                        <div class="w-[1rem] h-[1rem] rounded-full bg-borderL"></div>
                         <span class="font-semibold">#</span>موبایل شیاومی
                     </button>
                 </div>
                 <div class="swiper-slide">
                     <button class="max-[800px]:w-full px-[1rem] py-[0.5rem] text-[0.8rem] rounded-3xl border-borderL border-[1px] box-shadow--items--box flex items-center gap-[0.5rem] cursor-pointer hover:bg-register hover:text-brand ease-in-out duration-300 hover:border-brand">
-                        <div class="w-[1rem] h-[1rem] rounded-full bg-borderL"></div>
                         <span class="font-semibold">#</span>ساعت هوشمند اپل
                     </button>
                 </div>
                 <div class="swiper-slide">
                     <button class="max-[800px]:w-full px-[1rem] py-[0.5rem] text-[0.8rem] rounded-3xl border-borderL border-[1px] box-shadow--items--box flex items-center gap-[0.5rem] cursor-pointer hover:bg-register hover:text-brand ease-in-out duration-300 hover:border-brand">
-                        <div class="w-[1rem] h-[1rem] rounded-full bg-borderL"></div>
                         <span class="font-semibold">#</span>مانیتور سامسونگ
                     </button>
                 </div>
                 <div class="swiper-slide">
                     <button class="max-[800px]:w-full px-[1rem] py-[0.5rem] text-[0.8rem] rounded-3xl border-borderL border-[1px] box-shadow--items--box flex items-center gap-[0.5rem] cursor-pointer hover:bg-register hover:text-brand ease-in-out duration-300 hover:border-brand">
-                        <div class="w-[1rem] h-[1rem] rounded-full bg-borderL"></div>
                         <span class="font-semibold">#</span>هارد اکسترنال
                     </button>
                 </div>
@@ -2832,13 +3004,13 @@
     </div>
 
     <ul class="flex justify-center items-center gap-[1rem] text-sm text-topbar mt-[3rem] text-center min-[704px]:hidden">
-        <li class="pl-[1rem] border-l-[1px] border-borderL hover:text-brand ease-in-out duration-300 cursor-pointer max-[398px]:text-[0.7rem]">
+        <li class="pl-[1rem] border-l-[1px] border-borderL hover:text-brand ease-in-out duration-300 cursor-pointer max-[431px]:text-[0.7rem]">
             قوانین و شرایط استفاده
         </li>
-        <li class="pl-[1rem] border-l-[1px] border-borderL hover:text-brand ease-in-out duration-300 cursor-pointer max-[398px]:text-[0.7rem]">
+        <li class="pl-[1rem] border-l-[1px] border-borderL hover:text-brand ease-in-out duration-300 cursor-pointer max-[431px]:text-[0.7rem]">
             مجوز ها و نماد ها
         </li>
-        <li class="hover:text-brand ease-in-out duration-300 cursor-pointer max-[398px]:text-[0.7rem]"> تاریخچه
+        <li class="hover:text-brand ease-in-out duration-300 cursor-pointer max-[431px]:text-[0.7rem]"> تاریخچه
             تغییرات
         </li>
     </ul>
@@ -2864,44 +3036,44 @@
 
 
                     <button
-                            class="p-[0.4rem] text-[0.7rem] rounded-3xl border border-borderL box-shadow--items--box flex items-center justify-center gap-[0.5rem] cursor-pointer hover:bg-register hover:text-brand ease-in-out duration-300 hover:border-brand max-[400px]:text-[0.7rem] max-[300px]:text-[0.6rem] max-[300px]:px-[0.5rem]">
+                            class="max-[1202px]:text-[0.6rem] p-[0.4rem] text-[0.7rem] rounded-3xl border border-borderL box-shadow--items--box flex items-center justify-center gap-[0.5rem] cursor-pointer hover:bg-register hover:text-brand ease-in-out duration-300 hover:border-brand max-[400px]:text-[0.7rem] max-[300px]:text-[0.6rem] max-[300px]:px-[0.5rem]">
                         <span class="font-semibold">#</span>هدفون بلوتوثی
                     </button>
 
 
-                    <button class="p-[0.4rem] text-[0.7rem] rounded-3xl border border-borderL box-shadow--items--box flex items-center justify-center gap-[0.5rem] cursor-pointer hover:bg-register hover:text-brand ease-in-out duration-300 hover:border-brand max-[400px]:text-[0.7rem] max-[300px]:text-[0.6rem] max-[300px]:px-[0.5rem]">
+                    <button class="max-[1202px]:text-[0.6rem] p-[0.4rem] text-[0.7rem] rounded-3xl border border-borderL box-shadow--items--box flex items-center justify-center gap-[0.5rem] cursor-pointer hover:bg-register hover:text-brand ease-in-out duration-300 hover:border-brand max-[400px]:text-[0.7rem] max-[300px]:text-[0.6rem] max-[300px]:px-[0.5rem]">
                         <span class="font-semibold">#</span>آیفون 13 پرومکس
                     </button>
 
-                    <button class="p-[0.4rem] text-[0.7rem] rounded-3xl border border-borderL box-shadow--items--box flex items-center justify-center gap-[0.5rem] cursor-pointer hover:bg-register hover:text-brand ease-in-out duration-300 hover:border-brand max-[400px]:text-[0.7rem] max-[300px]:text-[0.6rem] max-[300px]:px-[0.5rem]">
+                    <button class="max-[1202px]:text-[0.6rem] p-[0.4rem] text-[0.7rem] rounded-3xl border border-borderL box-shadow--items--box flex items-center justify-center gap-[0.5rem] cursor-pointer hover:bg-register hover:text-brand ease-in-out duration-300 hover:border-brand max-[400px]:text-[0.7rem] max-[300px]:text-[0.6rem] max-[300px]:px-[0.5rem]">
                         <span class="font-semibold">#</span>کارت گرافیک MSI
                     </button>
 
-                    <button class="p-[0.4rem] text-[0.7rem] rounded-3xl border border-borderL box-shadow--items--box flex items-center justify-center gap-[0.5rem] cursor-pointer hover:bg-register hover:text-brand ease-in-out duration-300 hover:border-brand max-[400px]:text-[0.7rem] max-[300px]:text-[0.6rem] max-[300px]:px-[0.5rem]">
+                    <button class="max-[1202px]:text-[0.6rem] p-[0.4rem] text-[0.7rem] rounded-3xl border border-borderL box-shadow--items--box flex items-center justify-center gap-[0.5rem] cursor-pointer hover:bg-register hover:text-brand ease-in-out duration-300 hover:border-brand max-[400px]:text-[0.7rem] max-[300px]:text-[0.6rem] max-[300px]:px-[0.5rem]">
                         <span class="font-semibold">#</span>اسپیکر قابل حمل
                     </button>
 
-                    <button class="p-[0.4rem] text-[0.7rem] rounded-3xl border border-borderL box-shadow--items--box flex items-center justify-center gap-[0.5rem] cursor-pointer hover:bg-register hover:text-brand ease-in-out duration-300 hover:border-brand max-[400px]:text-[0.7rem] max-[300px]:text-[0.6rem] max-[300px]:px-[0.5rem]">
+                    <button class="max-[1202px]:text-[0.6rem] p-[0.4rem] text-[0.7rem] rounded-3xl border border-borderL box-shadow--items--box flex items-center justify-center gap-[0.5rem] cursor-pointer hover:bg-register hover:text-brand ease-in-out duration-300 hover:border-brand max-[400px]:text-[0.7rem] max-[300px]:text-[0.6rem] max-[300px]:px-[0.5rem]">
                         <span class="font-semibold">#</span>لپتاپ گیمینگ ایسوس
                     </button>
 
-                    <button class="p-[0.4rem] text-[0.7rem] rounded-3xl border border-borderL box-shadow--items--box flex items-center justify-center gap-[0.5rem] cursor-pointer hover:bg-register hover:text-brand ease-in-out duration-300 hover:border-brand max-[400px]:text-[0.7rem] max-[300px]:text-[0.6rem] max-[300px]:px-[0.5rem]">
+                    <button class="max-[1202px]:text-[0.6rem] p-[0.4rem] text-[0.7rem] rounded-3xl border border-borderL box-shadow--items--box flex items-center justify-center gap-[0.5rem] cursor-pointer hover:bg-register hover:text-brand ease-in-out duration-300 hover:border-brand max-[400px]:text-[0.7rem] max-[300px]:text-[0.6rem] max-[300px]:px-[0.5rem]">
                         <span class="font-semibold">#</span>کفش ورزشی آدیداس
                     </button>
 
-                    <button class="p-[0.4rem] text-[0.7rem] rounded-3xl border border-borderL box-shadow--items--box flex items-center justify-center gap-[0.5rem] cursor-pointer hover:bg-register hover:text-brand ease-in-out duration-300 hover:border-brand max-[400px]:text-[0.7rem] max-[300px]:text-[0.6rem] max-[300px]:px-[0.5rem]">
+                    <button class="max-[1202px]:text-[0.6rem] p-[0.4rem] text-[0.7rem] rounded-3xl border border-borderL box-shadow--items--box flex items-center justify-center gap-[0.5rem] cursor-pointer hover:bg-register hover:text-brand ease-in-out duration-300 hover:border-brand max-[400px]:text-[0.7rem] max-[300px]:text-[0.6rem] max-[300px]:px-[0.5rem]">
                         <span class="font-semibold">#</span>موبایل شیاومی
                     </button>
 
-                    <button class="p-[0.4rem] text-[0.7rem] rounded-3xl border border-borderL box-shadow--items--box flex items-center justify-center gap-[0.5rem] cursor-pointer hover:bg-register hover:text-brand ease-in-out duration-300 hover:border-brand max-[400px]:text-[0.7rem] max-[300px]:text-[0.6rem] max-[300px]:px-[0.5rem]">
+                    <button class="max-[1202px]:text-[0.6rem] p-[0.4rem] text-[0.7rem] rounded-3xl border border-borderL box-shadow--items--box flex items-center justify-center gap-[0.5rem] cursor-pointer hover:bg-register hover:text-brand ease-in-out duration-300 hover:border-brand max-[400px]:text-[0.7rem] max-[300px]:text-[0.6rem] max-[300px]:px-[0.5rem]">
                         <span class="font-semibold">#</span>ساعت هوشمند اپل
                     </button>
 
-                    <button class="p-[0.4rem] text-[0.7rem] rounded-3xl border border-borderL box-shadow--items--box flex items-center justify-center gap-[0.5rem] cursor-pointer hover:bg-register hover:text-brand ease-in-out duration-300 hover:border-brand max-[400px]:text-[0.7rem] max-[300px]:text-[0.6rem] max-[300px]:px-[0.5rem]">
+                    <button class="max-[1202px]:text-[0.6rem] p-[0.4rem] text-[0.7rem] rounded-3xl border border-borderL box-shadow--items--box flex items-center justify-center gap-[0.5rem] cursor-pointer hover:bg-register hover:text-brand ease-in-out duration-300 hover:border-brand max-[400px]:text-[0.7rem] max-[300px]:text-[0.6rem] max-[300px]:px-[0.5rem]">
                         <span class="font-semibold">#</span>مانیتور سامسونگ
                     </button>
 
-                    <button class="p-[0.4rem] text-[0.7rem] rounded-3xl border border-borderL box-shadow--items--box flex items-center justify-center gap-[0.5rem] cursor-pointer hover:bg-register hover:text-brand ease-in-out duration-300 hover:border-brand max-[400px]:text-[0.7rem] max-[300px]:text-[0.6rem] max-[300px]:px-[0.5rem]">
+                    <button class="max-[1202px]:text-[0.6rem] p-[0.4rem] text-[0.7rem] rounded-3xl border border-borderL box-shadow--items--box flex items-center justify-center gap-[0.5rem] cursor-pointer hover:bg-register hover:text-brand ease-in-out duration-300 hover:border-brand max-[400px]:text-[0.7rem] max-[300px]:text-[0.6rem] max-[300px]:px-[0.5rem]">
                         <span class="font-semibold">#</span>هارد اکسترنال
                     </button>
                 </div>
