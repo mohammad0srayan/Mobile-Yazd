@@ -82,7 +82,9 @@
         --color-registerDark: #f9cfb4;
         --color-btn: #ffffffd1;
         --color-backSite: #00000069;
-        --color-brandDark: #ec520159
+        --color-brandDark: #ec520159;
+        --color-change: #3BC1B8;
+        --color-backLogo: #D3BF4B;
     }
 }
 
@@ -1209,6 +1211,14 @@
 
     .text-brand {
         color: var(--color-brand)
+    }
+
+    .text-change {
+        color: var(--color-change);
+    }
+
+    .text-backLogo {
+        color: var(--color-backLogo);
     }
 
     .text-btn {
