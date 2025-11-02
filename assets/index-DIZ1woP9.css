@@ -1217,7 +1217,15 @@
         color: var(--color-change);
     }
 
+    .bg-change {
+        color: var(--color-change);
+    }
+
     .text-backLogo {
+        color: var(--color-backLogo);
+    }
+
+    .bg-backLogo {
         color: var(--color-backLogo);
     }
 
