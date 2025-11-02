@@ -391,3 +391,22 @@ body {
 .dp-single-carousel-bg .dp-single-carousel-bg-lg-svg .dp-single-carousel-bg-bcolor, .dp-single-carousel-bg .dp-single-carousel-bg-sm-svg .dp-single-carousel-bg-bcolor {
     fill: #E0E0E0;
 }
+
+.map-container {
+    width: 100%;
+    margin: 20px auto;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+}
+
+#map {
+    width: 100%;
+    height: 300px;
+    border-radius: 10px;
+}
+
+.leaflet-control-attribution {
+    font-size: 1px !important;
+    opacity: 0.6;
+}

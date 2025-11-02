@@ -7,10 +7,11 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" crossorigin href="assets/index-DIZ1woP9.css">
     <link rel="stylesheet" href="assets/style.css">
-    <script type="module" crossorigin src="assets/index-X_ZKCSfx.js"></script>
+<!--    <script type="module" crossorigin src="assets/index-X_ZKCSfx.js"></script>-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin=""/>
     <link rel="icon website" href="./assets/logo-mobile.png"/>
     <title>صفحه اصلی - یزد موبایل</title>
 </head>
@@ -2759,12 +2760,9 @@
                 </ul>
             </div>
 
-            <form class="mt-[2rem]">
-                <div class="w-full">
-                    <textarea
-                            class="w-full p-[1rem] h-[15rem] resize-none rounded-2xl box-shadow--items--box"></textarea>
+                <div class="map-container">
+                    <div id="map"></div>
                 </div>
-            </form>
         </div>
     </div>
 </div>
@@ -3110,6 +3108,9 @@
 
 <!-- Swiper JS -->
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+<!-- Leaflet -->
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
 
 <script src="assets/main.js"></script>
 </body>

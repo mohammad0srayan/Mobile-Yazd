@@ -1,22 +1,49 @@
-let menuBtn = document.querySelector('#menu-btn');
-let sidebarMain = document.querySelector('#sidebar-main');
-let closeBtn = document.querySelector('#sidebar ion-icon[name="close"]');
+let menuBtn = document.querySelector('#menu-btn')
+let sidebarMain = document.querySelector('#sidebar-main')
+let closeBtn = document.querySelector('#sidebar ion-icon[name="close"]')
 
 menuBtn.addEventListener('click', () => {
     sidebarMain.classList.add('active');
-});
+})
 
 closeBtn.addEventListener('click', () => {
     sidebarMain.classList.remove('active');
-});
+})
 
 document.body.addEventListener('keydown', (e) => {
     e.preventDefault();
     if (e.code === 'Escape') {
         sidebarMain.classList.remove('active');
     }
+})
+
+// مختصات محل مورد نظر
+const lat = 35.7323;
+const lng = 51.4099;
+
+// ساخت نقشه
+const map = L.map('map', {
+    zoomControl: false
+}).setView([lat, lng], 16);
+
+// اضافه کردن نقشه پایه از OpenStreetMap
+L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    maxZoom: 19,
+    attribution: '© OpenStreetMap'
+}).addTo(map);
+
+// افزودن آیکن مارکر اختصاصی
+const icon = L.icon({
+    iconUrl: 'https://cdn-icons-png.flaticon.com/512/684/684908.png',
+    iconSize: [40, 40],
+    iconAnchor: [20, 40]
 });
 
+// افزودن مارکر
+L.marker([lat, lng], { icon: icon })
+    .addTo(map)
+    .bindPopup("موقعیت فروشگاه")
+    .openPopup();
 
 var swiper1 = new Swiper(".mySwiper", {
     slidesPerView: 1,
